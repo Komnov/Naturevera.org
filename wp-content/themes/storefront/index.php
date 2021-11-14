@@ -119,56 +119,56 @@ get_header(); ?>
                     <div class="sub__category">
                         <div data-id="mattress" class="items__list">
                             <div class="item bl">
-                                <a href="">
+                                <a href="/product-category/matrasy/kollekcziya-bonnel/">
                                     <span class="title">Коллекция Bonnel</span>
                                 </a>
                             </div>
                             <div class="item er">
-                                <a href="">
+                                <a href="/product-category/matrasy/kollekcziya-easy-roll/">
                                     <span class="title">Коллекция Easy Roll</span>
                                 </a>
                             </div>
                             <div class="item lt">
-                                <a href="">
+                                <a href="/product-category/matrasy/kollekcziya-light/">
                                     <span class="title">Коллекция Light</span>
                                 </a>
                             </div>
                             <div class="item lo">
-                                <a href="">
+                                <a href="/product-category/matrasy/kollekcziya-larmento/">
                                     <span class="title">Коллекция Larmento</span>
                                 </a>
                             </div>
                             <div class="item fo">
-                                <a href="">
+                                <a href="/product-category/matrasy/kollekcziya-flavento/">
                                     <span class="title">Коллекция Flavento</span>
                                 </a>
                             </div>
                             <div class="item ts">
-                                <a href="">
+                                <a href="/product-category/matrasy/kollekcziya-trend-stil/">
                                     <span class="title">Коллекция Trend Stile</span>
                                 </a>
                             </div>
                             <div class="item ch">
-                                <a href="">
+                                <a href="/product-category/matrasy/detskie-matrasy/">
                                     <span class="title">Детские матрасы</span>
                                 </a>
                             </div>
                         </div>
                         <div data-id="Beds" class="items__list">
                             <div class="item kr">
-                                <a href="">
+                                <a href="/product-category/krovati/">
                                     <span class="title">Каталог кроватей</span>
                                 </a>
                             </div>
                         </div>
                         <div data-id="Accessories" class="items__list">
                             <div class="item pd">
-                                <a href="">
+                                <a href="/product-category/aksessuary/podushka/">
                                     <span class="title">Подушки</span>
                                 </a>
                             </div>
                             <div class="item nm">
-                                <a href="">
+                                <a href="/product-category/aksessuary/namatrasniki/">
                                     <span class="title">Наматрасники</span>
                                 </a>
                             </div>

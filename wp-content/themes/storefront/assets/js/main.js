@@ -33,7 +33,17 @@ if ($(window).width() < 1000) {
 $(function() {
     $('.header .mobile__nav').on('click', function () {
         $('.header .mobile__nav').toggleClass('active');
+        $('body').toggleClass('fixed');
     });
+});
+
+//search adaptive
+$(function () {
+if ($(window).width() < 1500) {
+        $('.woocommerce-product-search').on('click', function () {
+        $('.header__phone').toggleClass('active');
+    });
+    }
 });
 
 // fix header
