@@ -42,7 +42,7 @@ table {
 }
 
 a:active, a:focus {
-  outline: none;
+  outline: none!important;
 }
 
 input, textarea {
@@ -54,7 +54,7 @@ input:active, textarea:active {
 }
 
 :focus {
-  outline: none;
+  outline: noneimportant;
 }
 
 .row > * {
@@ -705,4 +705,112 @@ input:active, textarea:active {
   height: 90px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+
+/*category*/
+li.product-category.product {
+	box-shadow: 4px 4px 20px -5px #00000094;
+}
+li.product-category.product img {
+	margin: 0 0!important;
+}
+li.product-category.product:hover {
+	transition: 0.3s;
+	transform: scale(1.03);
+}
+h2.woocommerce-loop-category__title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff9c;
+    margin: 0 0!important;
+    padding: 20px 0;
+    font-size: 22px!important;
+    color: #000;
+}
+h2.woocommerce-loop-category__title mark.count {
+	font-size: 14px;
+}
+
+/*Product page*/
+.card__desc {
+	color: #000;
+}
+.card__desc .card__desc_adv {
+	display: flex;
+	justify-content: space-between;
+}
+.card__desc .card__desc_adv .item {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	align-items: center;
+   text-align: center;
+}
+.card__desc .card__desc_adv .item .bg-img {
+	width: 66px;height: 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.card__desc .card__desc_adv .item .title {
+	color: #000;
+}
+.card__desc .card__desc_adv .item .bg-img.a{background-image: url(../../assets/img/icons-card/1.png);}
+.card__desc .card__desc_adv .item .bg-img.b{background-image: url(../../assets/img/icons-card/2.png);}
+.card__desc .card__desc_adv .item .bg-img.c{background-image: url(../../assets/img/icons-card/3.png);}
+
+.card__desc > .title {
+	font-weight: 500;
+	font-size: 22px;
+}
+
+.card__desc_add {}
+.card__desc_add .item {
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+}
+.card__desc_add .item .bg-img {
+	width: 66px;height: 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.card__desc .card__desc_add .item .bg-img.a{background-image: url(../../assets/img/icons-card/pruzh.png);}
+.card__desc .card__desc_add .item .bg-img.b{background-image: url(../../assets/img/icons-card/ppu.png);}
+.card__desc .card__desc_add .item .bg-img.c{background-image: url(../../assets/img/icons-card/sloy.png);}
+.card__desc_add .item .title {
+	margin: 0 0 0 15px;
+}
+.woocommerce-product-attributes .woocommerce-product-attributes-item__label {
+	background-color: transparent;
+	border: 1px solid #f8f8f8;
+	display: flex;
+	align-items: center;
+	color: #000;
+}
+.woocommerce-product-attributes-item .woocommerce-product-attributes-item__label:before {
+	content: '';
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 55px;
+	height: 55px;
+	background-position: center;
+	display: inline-block;
+	margin: 0 20px 0 0 ;
+}
+.shop_attributes tr[class*="attribute_pa_mozhno-skrutit-v-rulon"] > th[class*="item__label"]:before {
+	background-image: url(../../assets/img/icons-card/rul.png);
+}
+.shop_attributes tr[class*="attribute_pa_nagruzka"] > th[class*="item__label"]:before {
+	background-image: url(../../assets/img/icons-card/pow-card.png);
+}
+.shop_attributes tr[class*="attribute_pa_zhestkost-storon"] > th[class*="item__label"]:before {
+	background-image: url(../../assets/img/icons-card/zhest-card.png);
+}
+.shop_attributes tr[class*="attributes-item--attribute_pa_vysota"] > th[class*="item__label"]:before {
+	background-image: url(../../assets/img/icons-card/height-card.png);
 }

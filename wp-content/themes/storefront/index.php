@@ -208,7 +208,7 @@ get_header(); ?>
                         <span class="title">Пенополиуретан</span>
                     </div>
                     <div class="index__materials_link">
-                        <a href="">Все <br>материалы <br>и все о них</a>
+                        <a href="/наполнители/">Все <br>материалы <br>и все о них</a>
                     </div>
                 </div>
             </div>

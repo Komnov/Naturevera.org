@@ -21,6 +21,10 @@
     white-space: nowrap;
     min-width: 250px;
   }
+  .header .header__nav .primary-navigation > ul > li > .sub-menu .sub-menu {
+    left: 110px;
+    top: -20px;
+  }
   .header .header__nav .primary-navigation > ul > li > .sub-menu li:hover .sub-menu {
     left: 110px;
     top: -20px;
