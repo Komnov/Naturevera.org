@@ -15,9 +15,12 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
-		<?php
+	<div class="container body_container">
+		<div class="row">
+			<div class="breadcrombs">
+			<?php if(function_exists('bcn_display_list')) { bcn_display_list(); }?>
+		</div>
+			<?php
 		while ( have_posts() ) :
 			the_post();
 
@@ -30,9 +33,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-
-	</main><!-- #main -->
-
+		</div>
+	</div>
 <?php
-get_sidebar();
 get_footer();

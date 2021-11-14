@@ -178,3 +178,40 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+//региструю области меню
+add_action( 'after_setup_theme', 'theme_register_nav_menu' );
+function theme_register_nav_menu() {
+	register_nav_menu( 'header', 'header_nav' );
+	register_nav_menu( 'footer', 'footer_nav' );
+}
+
+/* Выводим категории над списком товаров */
+function woocommerce_product_category( $args = array() ) {
+  $woocommerce_category_id = get_queried_object_id();
+  $args = array(
+    	'parent' => $woocommerce_category_id
+  );
+  $terms = get_terms( 'product_cat', $args );
+  if ( is_product_category() ) {
+	if ( $terms ) {
+    	echo '<ul class="woocommerce-categories">';
+    	foreach ( $terms as $term ) {
+        	echo '<li class="woocommerce-product-category-page">';
+			echo '<a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
+            woocommerce_subcategory_thumbnail( $term );
+			echo '</a>';
+			echo '<h2>';
+        	echo '<a href="' .  esc_url( get_term_link( $term ) ) . '" class="' . $term->slug . '">';
+        	echo $term->name;
+        	echo '</a>';
+        	echo '</h2>';
+        	echo '</li>';
+    	}
+    	echo '</ul>';
+  	}
+  }
+}
+
+add_action( 'woocommerce_before_main_content', 'woocommerce_product_category', 100 );
+
+add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
