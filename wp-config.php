@@ -20,6 +20,8 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', '/home/k/komnovalx/komnovalx.beget.tech/public_html/wp-content/plugins/wp-super-cache/' );
 define( 'DB_NAME', 'komnovalx_wp1' );
 
 /** Имя пользователя MySQL */

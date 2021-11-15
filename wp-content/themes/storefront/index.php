@@ -32,8 +32,11 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	    <section class="index__slider">
+            <?php echo do_shortcode('[smartslider3 slider="2"]
+'); ?>
+
      <!-- Slider main container -->
-<div class="swiper-container">
+<div class="swiper-container" style="display: none;">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
