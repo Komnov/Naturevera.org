@@ -69,3 +69,14 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+
+add_action( 'woocommerce_after_shop_loop_item', 'custom_display_post_meta', 9 );
+function custom_display_post_meta() {
+   global $product;
+   $attr = array('pa_nagruzka', 'pa_zhestkost-storon', 'skrutit-v-rulon', 'pa_vysota' ); // указываем массив нужных атрибутов для вывода
+   foreach ( $attr as $key=>$attribute ) {
+   $values = wc_get_product_terms( $product->id, $attribute, array( 'fields' => 'names' ) );
+   if (!empty($values))
+    echo '<div class="category__product_attr"><span>'.wc_attribute_label($attribute).'</span> : <span>'. implode( ', ', $values ).'</span></div>';
+    }
+}

@@ -31,35 +31,10 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<div class="index-page">
 	    <section class="index__slider">
             <?php echo do_shortcode('[smartslider3 slider="2"]
-'); ?>
-
-     <!-- Slider main container -->
-<div class="swiper-container" style="display: none;">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/banner.png" alt=""></a>
-        </div>
-        <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/banner.png" alt=""></a>
-        </div>
-        <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/banner.png" alt=""></a>
-        </div>
-        <div class="swiper-slide"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/banner.png" alt=""></a>
-        </div>
-        ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <!-- <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-</div>  
+'); ?>  
     </section>
 
     <section class="index__adv">
@@ -251,7 +226,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
+</div>
 <?php
 //do_action( 'storefront_sidebar' );
 get_footer();

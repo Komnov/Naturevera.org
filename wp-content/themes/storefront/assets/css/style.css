@@ -67,12 +67,19 @@ input:active, textarea:active {
   margin-left: 0;
 }
 
-.col-full {max-width: 100%!important}
+.col-full {max-width: 100%!important; padding: 0!important;}
+.woocommerce-products-header,
+ul.products.columns-4,
+ul.products.columns-5,
+ul.products.columns-3,
+ul.products.columns-6,
+#page .storefront-breadcrumb,
+.product.type-product
+ {
+	padding: 0 40px!important;
+}
 
 /*clear styles finish*/
-
-.storefront-sorting {display: none;}
-.product.type-product .price {display: none!important;}
 
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -165,7 +172,7 @@ input:active, textarea:active {
   transition: 0.3s;
   bottom: 0;
   left: 0;
-  background-color: #005447;
+  background-color: #f49400;
 }
 
 .header .header__nav ul li a:hover:before {
@@ -284,6 +291,9 @@ input:active, textarea:active {
   height: 13px;
   margin: 0 15px 0 0;
   opacity: 1;
+}
+.n2-ss-slider .n2-ss-slider-controls-below {
+	display: none!important;
 }
 
 .index__adv {
@@ -737,10 +747,78 @@ h2.woocommerce-loop-category__title {
 h2.woocommerce-loop-category__title mark.count {
 	font-size: 14px;
 }
+.site-main > .storefront-sorting:nth-child(2) {display: none!important;}
+.product.type-product .price {display: none!important;}
+.storefront-sorting .woocommerce-ordering {display: none!important;}
+.storefront-sorting {display: flex; justify-content: center;}
+.storefront-sorting .woocommerce-pagination {margin: 0 0 0 50px;}
+.term-description {
+    color: #000;
+    font-size: 16px;
+    margin: 0 0 40px 0;
+}
+#buyoneclick_form_order .form-message-result {
+  font-size: 20px!important;
+  color: #005447!important;
+}
+nav.storefront-product-pagination {
+  display: none!important;
+}
+.product.type-product img {
+  margin: 0 auto!important;
+}
+.product.type-product h2 {
+  font-weight: 600!important;
+  margin: 0 0 15px 0!important;
+}
+.product.type-product .single_add_to_cart_button{
+  padding: 6px 0;
+    font-size: 16px;
+}
+.product.type-product .product_type_simple {
+  margin: 10px 0 0 0;
+  width: 100%;
+    background-color: #f49400;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 0;
+}
+.product.type-product .product_type_simple:hover {
+  background-color: #333;
+  color: #fff;
+  transition: 0.3s;
+}
+.category__product_attr {
+    background-color: #e7e7e7;
+}
+ul.products li.product.product-category img {
+  width: 100%!important;
+}
+
+
 
 /*Product page*/
+.right-sidebar .content-area {
+	width: 100%!important;
+}
 .card__desc {
-	color: #000;
+    color: #000;
+    font-size: 14px;
+    max-width: 80%;
+}
+.card__desc_list li {
+  list-style-type: none;
+  position: relative;
+}
+.card__desc_list li:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #f49400;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: -13px;
 }
 .card__desc .card__desc_adv {
 	display: flex;
@@ -754,7 +832,7 @@ h2.woocommerce-loop-category__title mark.count {
    text-align: center;
 }
 .card__desc .card__desc_adv .item .bg-img {
-	width: 66px;height: 60px;
+	width: 50px;height: 50px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -778,7 +856,7 @@ h2.woocommerce-loop-category__title mark.count {
 	font-weight: 500;
 }
 .card__desc_add .item .bg-img {
-	width: 66px;height: 60px;
+	width: 50px;height: 50px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -818,6 +896,9 @@ h2.woocommerce-loop-category__title mark.count {
 .shop_attributes tr[class*="attributes-item--attribute_pa_vysota"] > th[class*="item__label"]:before {
 	background-image: url(../../assets/img/icons-card/height-card.png);
 }
+.shop_attributes tr[class*="attribute_pa_skruchen-v-rulon"] > th[class*="item__label"]:before {
+	background-image: url(../../assets/img/icons-card/rul.png);
+}
 .single_add_to_cart_button {
 	width: 100%;
 	padding: 21px;
@@ -830,7 +911,6 @@ h2.woocommerce-loop-category__title mark.count {
   font-size: 22px;
   background-color: #333!important;
 }
-#buyoneclick_form_order .form-message-result {
-	font-size: 20px!important;
-	color: #005447!important;
+#formOrderOneClick .popup .close_order {
+  right: 10px!important;
 }
