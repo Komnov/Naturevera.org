@@ -80,3 +80,12 @@ function custom_display_post_meta() {
     echo '<div class="category__product_attr"><span>'.wc_attribute_label($attribute).'</span> : <span>'. implode( ', ', $values ).'</span></div>';
     }
 }
+
+//Детали в характеристики
+add_filter( 'woocommerce_product_additional_information_tab_title', function(){
+    return 'Характеристики';
+} );
+add_filter('woocommerce_product_additional_information_heading', 'devise_product_additional_information_heading');
+function devise_product_additional_information_heading() {
+    echo 'Характеристики';
+}

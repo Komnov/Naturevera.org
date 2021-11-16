@@ -47,7 +47,13 @@
   .header .header__nav ul li .sub-menu li a {
     width: 100%;
   }
+  .woocommerce-tabs li.additional_information_tab,
+  .woocommerce-tabs div[aria-labelledby=tab-title-additional_information] 
+  {display: none!important;}
 }
+
+/*@media (min-width: 993px)*/
+
 
 @media (max-width: 1481px) {
   .header .header__logo {

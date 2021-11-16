@@ -28,6 +28,16 @@ if ($(window).width() < 1000) {
         $('.header__nav nav').clone().appendTo('.mobile__nav');
     }
 });
+// клон атрибутов
+$(function () {
+if ($(window).width() > 1000) {
+        $('#tab-additional_information').clone().appendTo('.woocommerce-product-gallery');
+    }
+});
+
+// разделяю категории и товары
+$('li.product-category.product:last').after('<div class="catalog__width">Каталог товаров</div>');
+
 
 //burger 
 $(function() {
