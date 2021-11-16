@@ -1174,7 +1174,7 @@ if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
 	 */
 	function woocommerce_template_loop_category_title( $category ) {
 		?>
-		<h2 class="woocommerce-loop-category__title">
+		<div class="woocommerce-loop-category__title">
 			<?php
 			echo esc_html( $category->name );
 
@@ -1183,7 +1183,7 @@ if ( ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
 				echo apply_filters( 'woocommerce_subcategory_count_html', ' <mark class="count">(' . esc_html( $category->count ) . ')</mark>', $category );
 			}
 			?>
-		</h2>
+		</div>
 		<?php
 	}
 }

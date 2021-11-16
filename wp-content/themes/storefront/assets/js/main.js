@@ -51,7 +51,7 @@ $(function() {
     let header = $('.header');
     
     $(window).scroll(function() {
-        if($(this).scrollTop() > 150) {
+        if($(this).scrollTop() > 200) {
         header.addClass('header_fixed');
         } else {
         header.removeClass('header_fixed');
@@ -65,3 +65,7 @@ $(function () {
             $('.footer .row .col-xl-1').addClass('display-none');
         }
     });
+
+$(document).on('click', '.pop_write_us', function() {
+    $('#callback-partners').arcticmodal();
+});
