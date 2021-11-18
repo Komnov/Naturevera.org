@@ -79,3 +79,4 @@ $(function () {
 $(document).on('click', '.pop_write_us', function() {
     $('#callback-partners').arcticmodal();
 });
+

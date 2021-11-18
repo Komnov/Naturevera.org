@@ -89,3 +89,44 @@ add_filter('woocommerce_product_additional_information_heading', 'devise_product
 function devise_product_additional_information_heading() {
     echo 'Характеристики';
 }
+
+
+// размер изображений в карточке товара
+
+
+// количество похожих товаров
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+ function jk_related_products_args( $args ) {
+ 
+$args['posts_per_page'] = 5; // количество "Похожих товаров"
+ $args['columns'] = 5; // количество колонок
+ return $args;
+}
+
+//  
+add_filter( 'jpeg_quality', 'my_filter_img' );
+function my_filter_img( $quality ) {  
+	return 100;
+}
+add_filter('woocommerce_get_image_size_single','add_single_size',2,10);
+function add_single_size($size){
+
+    $size['width'] = 757;
+    $size['height'] = 757;
+    $size['crop']   = 0;
+    return $size;
+}
+add_filter('woocommerce_get_image_size_gallery_thumbnail','add_gallery_thumbnail_size',2,10);
+function add_gallery_thumbnail_size($size){
+
+    $size['width'] = 757;
+    $size['height'] = 757;
+    $size['crop']   = 1;
+    return $size;
+}
+
+add_action('after_setup_theme', 'remove_zoom_theme_support', 100);
+function remove_zoom_theme_support() {
+    remove_theme_support('wc-product-gallery-zoom');
+}
+
