@@ -73,7 +73,7 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
 add_action( 'woocommerce_after_shop_loop_item', 'custom_display_post_meta', 9 );
 function custom_display_post_meta() {
    global $product;
-   $attr = array('pa_nagruzka', 'pa_zhestkost-storon', 'skrutit-v-rulon', 'pa_vysota' ); // указываем массив нужных атрибутов для вывода
+   $attr = array('pa_nagruzka', 'pa_zhestkost-storon', 'skrutit-v-rulon', 'pa_vysota', 'pa_razmer', 'pa_zhestkost', ); // указываем массив нужных атрибутов для вывода
    foreach ( $attr as $key=>$attribute ) {
    $values = wc_get_product_terms( $product->id, $attribute, array( 'fields' => 'names' ) );
    if (!empty($values))

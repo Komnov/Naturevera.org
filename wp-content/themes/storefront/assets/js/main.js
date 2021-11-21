@@ -41,7 +41,7 @@ $('li.product-category.product:last').after('<div class="catalog__width">Кат�
 
 //burger 
 $(function() {
-    $('.header .mobile__nav').on('click', function () {
+    $('.header .mobile__nav .burger').on('click', function () {
         $('.header .mobile__nav').toggleClass('active');
         $('body').toggleClass('fixed');
     });
@@ -50,8 +50,8 @@ $(function() {
 //search adaptive
 $(function () {
 if ($(window).width() < 1500) {
-        $('.woocommerce-product-search').on('click', function () {
-        $('.header__phone').toggleClass('active');
+        $('.site-search .img').on('click', function () {
+        $(this).parent().parent().toggleClass('active');
     });
     }
 });
@@ -61,7 +61,7 @@ $(function() {
     let header = $('.header');
     
     $(window).scroll(function() {
-        if($(this).scrollTop() > 200) {
+        if($(this).scrollTop() > 350) {
         header.addClass('header_fixed');
         } else {
         header.removeClass('header_fixed');
@@ -80,3 +80,13 @@ $(document).on('click', '.pop_write_us', function() {
     $('#callback-partners').arcticmodal();
 });
 
+//Мобильное меню
+$(function(){
+    $('.mobile__nav .sub-menu').toggle()
+    $('.mobile__nav li.menu-item-has-children').append('<div class="arrow"></div>');
+    $(document).on('click', '.mobile__nav li.menu-item-has-children .arrow', function () {
+        $(this).parent('.menu-item').toggleClass('active');
+        $(this).toggleClass('active');
+        $(this).parent('.menu-item').children('.sub-menu').toggle(300)
+    });
+});

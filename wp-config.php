@@ -21,11 +21,11 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', '/home/k/komnovalx/komnovalx.beget.tech/public_html/wp-content/plugins/wp-super-cache/' );
-define( 'DB_NAME', 'komnovalx_wp1' );
+define( 'WPCACHEHOME', '/naturavera.org/public_html/wp-content/plugins/wp-super-cache/' );
+define( 'DB_NAME', 'naturavera_new' );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'komnovalx_wp1' );
+define( 'DB_USER', 'naturavera_new' );
 
 /** Пароль к базе данных MySQL */
 define( 'DB_PASSWORD', 'WO7Jky5&%' );

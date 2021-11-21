@@ -42,26 +42,26 @@
                 <div class="col-xl-2 col-lg-2 col-md-6 col-6 footer__column">
                     <div class="title">Natura Vera</div>
                     <div class="links">
-                        <a href="">О Компании</a>
-                        <a href="">Сотрудничество</a>
-                        <a href="">Каталог</a>
-                        <a href="">Наполнители</a>
-                        <a href="">Производство</a>
+                        <a href="/o-kompanii/">О Компании</a>
+                        <a href="/sotrenichestvo/">Сотрудничество</a>
+                        <a href="/shop/">Каталог</a>
+                        <a href="/napolniteli/">Наполнители</a>
+                        <a href="/proizodstvo/">Производство</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-6 footer__column">
                     <div class="title">Продукция</div>
                     <div class="links">
-                        <a href="">Матрасы</a>
-                        <a href="">Кровати</a>
-                        <a href="">Топперы и наматрасники</a>
-                        <a href="">Подушки</a>
-                        <a href="">Аксессуары</a>
+                        <a href="/product-category/matrasy/">Матрасы</a>
+                        <a href="/product-category/krovati/">Кровати</a>
+                        <a href="/product-category/aksessuary/namatrasniki/">Топперы и наматрасники</a>
+                        <a href="/product-category/aksessuary/podushka/">Подушки</a>
+                        <a href="/product-category/aksessuary/">Аксессуары</a>
                     </div>
                 </div>
                 <div class="col-xl-1 col-lg-1"></div>
                 <div class="col-xl-5 col-lg-5 col-md-12 col-12 footer__column contacts">
-                    <div class="title">Продукция</div>
+                    <div class="title">Контакты</div>
                     <div>141603, Московская область, г. Клин,</div>
                     <div>Ленинградское шоссе, 88 км., стр. 3, офис 102</div>
                     <div>Телефон: <a href="tel:88005550777">8 (800) 555-0-777</a></div>

@@ -40,12 +40,12 @@ get_header(); ?>
     <section class="index__adv">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 index__adv_text">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 index__adv_text">
                     <p>
                         Мы - <span class="green">NATURA</span><span class="orange">VERA</span> - одна <br>из самых стабильных <br>и быстро развивающихся <br>компаний, работаем <br>на рынке производства <br>мебели и матрасов с 2015 <br>года.
                     </p>
                 </div>
-                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 index__adv_list">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 index__adv_list">
                     <div class="index__adv_item">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/adv1.svg" alt="">
                         <span class="title">5 место в России по мощностям выпускаемой продукции</span>
@@ -186,7 +186,7 @@ get_header(); ?>
                         <span class="title">Пенополиуретан</span>
                     </div>
                     <div class="index__materials_link">
-                        <a href="/наполнители/">Все <br>материалы <br>и все о них</a>
+                        <a href="/napolniteli/">Все <br>материалы <br>и все о них</a>
                     </div>
                 </div>
             </div>

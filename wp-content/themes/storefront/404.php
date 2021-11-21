@@ -13,7 +13,7 @@ get_header(); ?>
 
 			<div class="error-404 not-found">
 
-				<div class="page-content">
+				<div class="page-content" style="display: none;">
 
 					<header class="page-header">
 						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'storefront' ); ?></h1>
@@ -76,6 +76,12 @@ get_header(); ?>
 					?>
 
 				</div><!-- .page-content -->
+				<div class="page-content">
+					<div style="display: block; text-align: center;">
+						Страница не найдена <br>
+					Вернуться на <a href="/">Главную</a>
+					</div>
+				</div>
 			</div><!-- .error-404 -->
 
 		</main><!-- #main -->

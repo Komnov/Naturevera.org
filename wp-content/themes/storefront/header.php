@@ -58,8 +58,10 @@
         <div class="header__phone">
             <!-- <div class="search"><input type="text" placeholder="Поиск"></div> -->
             <div class="site-search">
-				<?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
-			</div>
+				
+                <?php the_widget( 'WC_Widget_Product_Search', 'title=' ); ?>
+			     <div class="img"></div>
+            </div>
             <a href="tel:88005550777">8 (800) 555-0-777</a>
         </div>
         <div class="mobile__nav">
