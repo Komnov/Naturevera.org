@@ -123,7 +123,7 @@ get_header(); ?>
                             </div>
                             <div class="item ts">
                                 <a href="/product-category/matrasy/kollekcziya-trend-stil/">
-                                    <span class="title">Коллекция Trend Stile</span>
+                                    <span class="title">Коллекция Trend Style</span>
                                 </a>
                             </div>
                             <div class="item ch">
