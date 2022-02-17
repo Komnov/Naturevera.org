@@ -130,3 +130,11 @@ function remove_zoom_theme_support() {
     remove_theme_support('wc-product-gallery-zoom');
 }
 
+
+//создаем новую область меню
+add_action('after_setup_theme', function() {
+	add_theme_support('menus');
+	register_nav_menus([
+		'index-menu' => 'Меню на главной'
+	]);
+});

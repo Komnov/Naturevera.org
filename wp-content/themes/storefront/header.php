@@ -40,7 +40,7 @@
 	    <header class="header">
         <div class="header__logo">
             <a href="/">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_header.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo_header.svg" alt="">
             </a>
         </div>
         <div class="header__nav desktop">

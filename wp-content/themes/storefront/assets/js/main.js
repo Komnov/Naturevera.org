@@ -57,7 +57,7 @@ if ($(window).width() < 1500) {
 });
 
 // fix header
-$(function() {
+/*$(function() {
     let header = $('.header');
     
     $(window).scroll(function() {
@@ -67,7 +67,7 @@ $(function() {
         header.removeClass('header_fixed');
         }
     });
-});
+});*/
 
 // скрыем блоки для адаптива
 $(function () {
