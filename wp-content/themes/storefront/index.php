@@ -171,16 +171,16 @@ get_header(); ?>
     <section class="index__slider_gallery">
         <div class="container">
             <div class="row index__slider_gallery-container">
-                <div class="col-xl-4 col-lg-4 col-md-6 item"><?php
+                <div class="col-xl-4 col-lg-4 col-md-6 col-6 item"><?php
                     echo do_shortcode('[smartslider3 slider="3"]');
                     ?>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 item">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-6 item">
                     <?php
                         echo do_shortcode('[smartslider3 slider="4"]');
                     ?>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 item">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 item">
                     <?php
                         echo do_shortcode('[smartslider3 slider="5"]');
                     ?>
@@ -241,7 +241,54 @@ get_header(); ?>
                 </div>
             </div>
         </section>
-    
+
+        <section class="index_works_adv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-12">
+                        <div class="index_title">Преимущества сотрудничества с нами</div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
+                        <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv1.svg" alt=""></div>
+                        <span class="title">Надежный производитель</span>
+                        <span class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit nam cupiditate numquam quis, culpa minus repellendus dignissimos impedit vitae autem fugit error magni, architecto, eius esse officia non labore!</span>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
+                        <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv2.svg" alt=""></div>
+                        <span class="title">Конкуретная цена</span>
+                        <span class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit nam cupiditate numquam quis, culpa minus repellendus dignissimos impedit vitae autem fugit error magni, architecto, eius esse officia non labore!</span>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
+                        <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv3.svg" alt=""></div>
+                        <span class="title">Обучение партнеров</span>
+                        <span class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit nam cupiditate numquam quis, culpa minus repellendus dignissimos impedit vitae autem fugit error magni, architecto, eius esse officia non labore!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <artcile class="footer__adv">
+            <div class="container">
+                <div class="row">
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv1.svg" alt="">
+                        <span class="title">Региональные <br>склады</span>
+                    </div>
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv2.svg" alt="">
+                        <span class="title">гарантия качества <br>до 10 лет</span>
+                    </div>
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv3.svg" alt="">
+                        <span class="title">Удобный сервис <br>для клиента</span>
+                    </div>
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv4.svg" alt="">
+                        <span class="title">Собственный контроль <br>качества</span>
+                    </div>
+                </div>
+            </div>
+        </artcile>
+            
 </div>
 <?php
 //do_action( 'storefront_sidebar' );

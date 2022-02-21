@@ -51,7 +51,7 @@ $(function() {
 $(function () {
 if ($(window).width() < 1500) {
         $('.site-search .img').on('click', function () {
-        $(this).parent().parent().toggleClass('active');
+        $(this).parent().parent().parent().toggleClass('active');
     });
     }
 });
