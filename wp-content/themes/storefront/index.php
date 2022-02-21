@@ -185,6 +185,11 @@ get_header(); ?>
                         echo do_shortcode('[smartslider3 slider="5"]');
                     ?>
                 </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 item mobile">
+                    <?php
+                        echo do_shortcode('[smartslider3 slider="6"]');
+                    ?>
+                </div>
             </div>
         </div>
     </section>
