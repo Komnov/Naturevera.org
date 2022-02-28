@@ -38,7 +38,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 index__adv_text">
                     <p>
-                        <span class="green">NATURA</span><span class="orange">VERA</span> — одна из самых стабильных и быстро развиваю- щихся компаний, работает на рынке производства мебели и матрасов с 2015 года. В каталоге продукции — анатомические матрасы разных видов конструкции и степени жесткости, а также современные кровати с системами хранения и аксессуары для сна.
+                        <span class="green">NATURA</span><span class="orange">VERA</span> — одна из самых стабильных и быстро развивающихся компаний, работает на рынке производства мебели и матрасов с 2015 года. В каталоге продукции — анатомические матрасы разных видов конструкции и степени жесткости, а также современные кровати с системами хранения и аксессуары для сна.
                     </p>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 index__adv_list">
@@ -256,17 +256,17 @@ get_header(); ?>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
                         <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv1.svg" alt=""></div>
                         <span class="title">Надежный производитель</span>
-                        <span class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit nam cupiditate numquam quis, culpa minus repellendus dignissimos impedit vitae autem fugit error magni, architecto, eius esse officia non labore!</span>
+                        <span class="desc">Наше производство оснащено высокотехнологичным оборудованием для производства комплектующих и сборки матрасов. В изготовлении используются только натуральные наполнители и гипоаллергенные материалы. Высокое качество нашей продукции подтверждено сертификатами соответствия. </span>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
                         <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv2.svg" alt=""></div>
                         <span class="title">Конкуретная цена</span>
-                        <span class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit nam cupiditate numquam quis, culpa minus repellendus dignissimos impedit vitae autem fugit error magni, architecto, eius esse officia non labore!</span>
+                        <span class="desc">Мы предлагаем выгодные ценовые условия для наших партнеров. Это позволяет подобрать подходящие матрасы и аксессуары даже самым требовательным клиентам. Конкурентные цены на продукцию гарантируют активный рост прибыльности вашего бизнеса. </span>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
                         <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv3.svg" alt=""></div>
                         <span class="title">Обучение партнеров</span>
-                        <span class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit nam cupiditate numquam quis, culpa minus repellendus dignissimos impedit vitae autem fugit error magni, architecto, eius esse officia non labore!</span>
+                        <span class="desc">Мы комплексно подходим к сотрудничеству и предоставляем партнерам все необходимые обучающие материалы и методические пособия, необходимые для легкого знакомства с продуктом. Обучение торгового персонала проводится онлайн и офлайн.</span>
                     </div>
                 </div>
             </div>
@@ -280,7 +280,7 @@ get_header(); ?>
                     </div>
                     <div class="item">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv2.svg" alt="">
-                        <span class="title">гарантия качества <br>до 10 лет</span>
+                        <span class="title">Гарантия качества <br>до 10 лет</span>
                     </div>
                     <div class="item">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv3.svg" alt="">

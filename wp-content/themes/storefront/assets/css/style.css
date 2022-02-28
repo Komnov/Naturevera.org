@@ -1,5 +1,23 @@
 @charset "UTF-8";
 /* clear styles */
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/PLUMB-MEDIUM.eot');
+  src: local('☺'), url('../fonts/PLUMB-MEDIUM.woff') format('woff'), url('../fonts/PLUMB-MEDIUM.ttf') format('truetype'), url('../fonts/PLUMB-MEDIUM.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Plumb';
+  src: url('../fonts/PLUMBLIGHTC.eot');
+  src: local('☺'), url('../fonts/PLUMBLIGHTC.woff') format('woff'), url('../fonts/PLUMBLIGHTC.ttf') format('truetype'), url('../fonts/PLUMBLIGHTC.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-family: 'Plumb', 'Montserrat', Arial!important;
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -7,7 +25,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Montserrat', Arial, sans-serif;
+  /*font-family: 'Montserrat', Arial, sans-serif;*/
   text-decoration: none;
 }
 
@@ -81,24 +99,7 @@ ul.products.columns-6,
 }
 
 /*clear styles finish*/
-@font-face {
-  font-family: 'Plumb';
-  src: url('../fonts/PLUMB-MEDIUM.eot');
-  src: local('☺'), url('../fonts/PLUMB-MEDIUM.woff') format('woff'), url('../fonts/PLUMB-MEDIUM.ttf') format('truetype'), url('../fonts/PLUMB-MEDIUM.svg') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Plumb';
-  src: url('../fonts/PLUMBLIGHTC.eot');
-  src: local('☺'), url('../fonts/PLUMBLIGHTC.woff') format('woff'), url('../fonts/PLUMBLIGHTC.ttf') format('truetype'), url('../fonts/PLUMBLIGHTC.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  font-family: 'Plumb', 'Montserrat', Arial!important;
-}
 
 
 ul.woocommerce-error {
@@ -170,7 +171,7 @@ div#primary {
 
 .header .header__nav {
   width: 50%;
-  background-color: #32574F;
+  background-color: #05564E;
   padding: 10px 20px;
 }
 
@@ -254,7 +255,7 @@ div#primary {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: #32574F;
+  background-color: #05564E;
   padding: 5px 20px;
 }
 
@@ -312,8 +313,8 @@ div#primary {
 
 .footer .footer__column .title {
   font-size: 18px;
-  font-weight: 600;
-  margin: 0 0 20px 0;
+  font-weight: 500;
+  margin: 0 0 15px 0;
   color: #fff;
 }
 
@@ -328,11 +329,13 @@ div#primary {
 }
 
 .footer .footer__column .links a {
-  margin: 0 0 10px 0;
+  margin: 0 0 5px 0;
+  font-weight: 500;
 }
 
 .footer .footer__column.contacts > div:not(.title) {
   margin: 0 0 10px 0;
+  font-weight: 500;
 }
 
 .index__slider .swiper-container {
@@ -394,20 +397,24 @@ div#primary {
   padding: 0px 85px;
   font-size: 22px;
   text-align: justify;
+  word-spacing: -2px;
+}
+.index__adv .index__adv_text p {
+  margin: 0 0;
 }
 .index__adv .index__adv_text br {display: none;}
 
 .index__adv .index__adv_text .green {
   color: #334D47;    
-  font-size: 30px;
+  font-size: 32px;
   position: relative;
   top: 5px;
   font-weight: 500;
 }
 
 .index__adv .index__adv_text .orange {
-  color: #D88747;    
-  font-size: 30px;
+  color: #e98905;    
+  font-size: 32px;
   position: relative;
   top: 5px;
   font-weight: 500;
@@ -463,8 +470,12 @@ div#primary {
 .index__category .index__category_item {
   display: flex;
   align-items: center;
-  margin: 0 60px 0 0;
+  margin: 0 75px 0 0;
   width: initial;
+  text-transform: uppercase;
+}
+.index__category .index__category_item:last-child {
+  margin: 0 0;
 }
 .index__category .index__category_item img {
   width: 110px;
@@ -474,7 +485,7 @@ div#primary {
 .index__category .index__category_item .title {
   color: #585652;
   font-weight: 500;
-  line-height: 25px;
+  line-height: initial;
   font-size: 26px;
   margin: 0 0 0 15px;
 }
@@ -534,7 +545,7 @@ section.category__blocks {
 }
 .index_title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 0 15px 0;
   display: block;
   text-align: center;
@@ -585,6 +596,7 @@ section.category__blocks {
 .index__materials .item .img.about span {
   margin: 0 0;
   transition: 0.3s;
+  padding: 0 10px;
 }
 .index__materials .item .img::after{
   content: '';
@@ -664,6 +676,8 @@ section.category__blocks {
 .index_works_adv .item .desc {
   font-size: 18px;
   line-height: initial;
+  text-align: justify;
+  word-spacing: -2px;
 }
 .footer__adv  {
   margin: 40px 0 0 0;
