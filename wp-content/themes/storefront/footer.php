@@ -43,10 +43,10 @@
                     <div class="title">Natura Vera</div>
                     <div class="links">
                         <a href="/o-kompanii/">О Компании</a>
-                        <a href="/sotrenichestvo/">Сотрудничество</a>
-                        <a href="/shop/">Каталог</a>
-                        <a href="/napolniteli/">Наполнители</a>
                         <a href="/proizodstvo/">Производство</a>
+                        <a href="/napolniteli/">Наполнители</a>
+                        <a href="/shop/">Каталог</a>
+                        <a href="/sotrenichestvo/">Сотрудничество</a>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-6 footer__column">
@@ -54,9 +54,9 @@
                     <div class="links">
                         <a href="/product-category/matrasy/">Матрасы</a>
                         <a href="/product-category/krovati/">Кровати</a>
-                        <a href="/product-category/aksessuary/namatrasniki/">Топперы и наматрасники</a>
-                        <a href="/product-category/aksessuary/podushka/">Подушки</a>
                         <a href="/product-category/aksessuary/">Аксессуары</a>
+                        <a href="/product-category/aksessuary/podushka/">Подушки</a>
+                        <a href="/product-category/aksessuary/namatrasniki/">Топперы и наматрасники</a>
                     </div>
                 </div>
                 <div class="col-xl-1 col-lg-1"></div>

@@ -32,50 +32,38 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <div class="index-page">
-	    <section class="index__slider">
-            <?php echo do_shortcode('[smartslider3 slider="2"]
-'); ?>  
-    </section>
 
     <section class="index__adv">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 index__adv_text">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 index__adv_text">
                     <p>
-                        Мы - <span class="green">NATURA</span><span class="orange">VERA</span> - одна <br>из самых стабильных <br>и быстро развивающихся <br>компаний, работаем <br>на рынке производства <br>мебели и матрасов с 2015 <br>года.
+                        <span class="green">NATURA</span><span class="orange">VERA</span> — одна из самых стабильных и быстро развивающихся компаний, работает на рынке производства мебели и матрасов с 2015 года. В каталоге продукции — анатомические матрасы разных видов конструкции и степени жесткости, а также современные кровати с системами хранения и аксессуары для сна.
                     </p>
                 </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 index__adv_list">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 index__adv_list">
                     <div class="index__adv_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/adv1.svg" alt="">
-                        <span class="title">5 место в России по мощностям выпускаемой продукции</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_adv1.svg" alt="">
+                        <span class="title">Производственный <br>комплекс <b>70 000 м2</b></span>
                     </div>
                     <div class="index__adv_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/adv2.svg" alt="">
-                        <span class="title">Производственный комплекс 70 000 м2</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_adv3.svg" alt="">
+                        <span class="title"><b>Широкая</b><br>ассортиментная матрица</span>
                     </div>
                     <div class="index__adv_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/adv3.svg" alt="">
-                        <span class="title">1000 матрасов выпускается ежедневно</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_adv2.svg" alt="">
+                        <span class="title"><b>1000 матрасов</b><br>выпускается ежедневно</span>
                     </div>
                     <div class="index__adv_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/adv4.svg" alt="">
-                        <span class="title">5000 кроватей выпускается каждый месяц</span>
-                    </div>
-                    <div class="index__adv_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/adv5.svg" alt="">
-                        <span class="title">Собственное производство комплектующих</span>
-                    </div>
-                    <div class="index__adv_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/adv6.svg" alt="">
-                        <span class="title">Широкая ассортиментная матрица</span>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_adv4.svg" alt="">
+                        <span class="title"><b>Собственное</b> производство <br>комплектующих</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="category__blocks">
+    <section class="category__blocks" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
@@ -157,75 +145,155 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="index__materials">
+    <section class="index__category">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12">
-                    <div class="index__title">Материалы</div>
-                    <div class="desc">Мы используем в производстве только <br>высококачественные материалы и наполнители</div>
+            <div class="row index__category_container">
+            <div class="index__category_item">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat1.svg" alt="">
+            <span class="title">Матрасы</span>
+            </div>
+            <div class="index__category_item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat2.svg" alt="">
+                <span class="title">Интерьерные <br>кровати</span>
+            </div>
+            <div class="index__category_item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat3.svg" alt="">
+                <span class="title">Подушки</span>
+            </div>
+            <div class="index__category_item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat4.svg" alt="">
+                <span class="title">Наматрасники</span>
+            </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="index__slider_gallery">
+        <div class="container">
+            <div class="row index__slider_gallery-container">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-6 item"><?php
+                    echo do_shortcode('[smartslider3 slider="3"]');
+                    ?>
                 </div>
-                <div class="col-xl-12 col-lg-12 index__materials_list">
-                    <div class="index__materials_item sticker">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/kok.jpg" alt="">
-                        <span class="title">Кокосовое волокно</span>
-                    </div>
-                    <div class="index__materials_item sticker">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/lateks.jpg" alt="">
-                        <span class="title">Натуральный латекс</span>
-                    </div>
-                    <div class="index__materials_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/hollcon.jpg" alt="">
-                        <span class="title">Hollcon</span>
-                    </div>
-                    <div class="index__materials_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/termovoilok.jpg" alt="">
-                        <span class="title">Термовойлок</span>
-                    </div>
-                    <div class="index__materials_item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/polip.png" alt="">
-                        <span class="title">Пенополиуретан</span>
-                    </div>
-                    <div class="index__materials_link">
-                        <a href="/napolniteli/">Все <br>материалы <br>и все о них</a>
-                    </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-6 item">
+                    <?php
+                        echo do_shortcode('[smartslider3 slider="4"]');
+                    ?>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 item">
+                    <?php
+                        echo do_shortcode('[smartslider3 slider="5"]');
+                    ?>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 item mobile">
+                    <?php
+                        echo do_shortcode('[smartslider3 slider="6"]');
+                    ?>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="index__cooperation">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 index__title">
-                    <div class="">Сотрудничество</div>
-                </div>
-                <div class="col-xl-6 col-lg-6 index__cooperation_image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/partners.jpg" alt="">
-                </div>
-                <div class="col-xl-6 col-lg-6 index__cooperation_form">
-                    <div class="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, recusandae magnam. Ex distinctio sit voluptate quibusdam possimus quis ducimus nihil. Magnam id nostrum temporibus quisquam, quos omnis necessitatibus sint natus.
+
+    
+        <section class="index__materials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-12">
+                        <div class="index_title">Наполнители</div>
                     </div>
-                    <div class="pop_write_us">
-                        <div>Напишите нам</div>
+                    <div class="col-xl-12 col-12">
+                        <div class="index__materials_subtitle">Мы используем современные и экологичные  материалы, соблюдая лучшие <br>традиции качества при производстве нашей продукции</div>
+                    </div>
+                    <div class="col-xl-12 col-12 index__materials-container">
+                        <a href="" class="item">
+                            <div class="img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat1.png" alt="">
+                            </div>
+                            <span>Кокос</span>
+                        </a>
+                        <a href="" class="item">
+                            <div class="img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat2.png" alt="">
+                            </div>
+                            <span>Сизаль</span>
+                        </a>
+                        <a href="" class="item">
+                            <div class="img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat3.png" alt="">
+                            </div>
+                            <span>Memory foam</span>
+                        </a>
+                        <a href="" class="item">
+                            <div class="img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat4.png" alt="">
+                            </div>
+                            <span>Латекс</span>
+                        </a>
+                        <a href="" class="item">
+                            <div class="img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat5.png" alt="">
+                            </div>
+                            <span>7-зональный <br>латекс Алое</span>
+                        </a>
+                        <a href="" class="item">
+                            <div class="img about">
+                                <span>Все материалы и все о них</span>
+                            </div>
+
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 index__cooperation_desc">
-                    Мы работаем на взаимовыгодных условиях со многими мебельными <br>брендами, среди которых
-                </div>
-                <div class="col-xl-12 col-lg-12 index__cooperation_partners">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/hoff_logo.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/mnogo_mebeli_logo.png" alt="" style="width: 270px;">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/perviy_mebelniy_logo.png" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/angs_logo.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/ld_logo.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/elba.jpg" alt="">
+        </section>
+
+        <section class="index_works_adv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-12">
+                        <div class="index_title">Преимущества сотрудничества с нами</div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
+                        <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv1.svg" alt=""></div>
+                        <span class="title">Надежный производитель</span>
+                        <span class="desc">Наше производство оснащено высокотехнологичным оборудованием для производства комплектующих и сборки матрасов. В изготовлении используются только натуральные наполнители и гипоаллергенные материалы. Высокое качество нашей продукции подтверждено сертификатами соответствия. </span>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
+                        <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv2.svg" alt=""></div>
+                        <span class="title">Конкуретная цена</span>
+                        <span class="desc">Мы предлагаем выгодные ценовые условия для наших партнеров. Это позволяет подобрать подходящие матрасы и аксессуары даже самым требовательным клиентам. Конкурентные цены на продукцию гарантируют активный рост прибыльности вашего бизнеса. </span>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
+                        <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv3.svg" alt=""></div>
+                        <span class="title">Обучение партнеров</span>
+                        <span class="desc">Мы комплексно подходим к сотрудничеству и предоставляем партнерам все необходимые обучающие материалы и методические пособия, необходимые для легкого знакомства с продуктом. Обучение торгового персонала проводится онлайн и офлайн.</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <artcile class="footer__adv">
+            <div class="container">
+                <div class="row">
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv1.svg" alt="">
+                        <span class="title">Региональные <br>склады</span>
+                    </div>
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv2.svg" alt="">
+                        <span class="title">Гарантия качества <br>до 10 лет</span>
+                    </div>
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv3.svg" alt="">
+                        <span class="title">Удобный сервис <br>для клиента</span>
+                    </div>
+                    <div class="item">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/footer_adv4.svg" alt="">
+                        <span class="title">Собственный контроль <br>качества</span>
+                    </div>
+                </div>
+            </div>
+        </artcile>
+            
 </div>
 <?php
 //do_action( 'storefront_sidebar' );
