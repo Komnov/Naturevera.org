@@ -132,9 +132,9 @@ function remove_zoom_theme_support() {
 
 
 //создаем новую область меню
-add_action('after_setup_theme', function() {
+/*add_action('after_setup_theme', function() {
 	add_theme_support('menus');
 	register_nav_menus([
 		'index-menu' => 'Меню на главной'
 	]);
-});
+});*/
