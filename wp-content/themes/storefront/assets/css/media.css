@@ -5,7 +5,7 @@
   }
   .index__slider_gallery .item {
     padding: 0 15px;
-    width: 25%;
+    width: 33%;
   }
   .index_works_adv {
     padding: 0 10%;
@@ -96,29 +96,6 @@
   .header .header__phone {
     width: 20%;
   }
-
-  .header__phone .site-search .widget_product_search {
-  	width: 0px;
-  	height: 0;
-  	overflow: hidden;
-  	transition: 0.3s;
-  }
-  .header__phone .site-search .img {
-  	width: 30px;
-  	height: 30px;
-  	background-image: url(../../assets/img/icons/search.svg);
-  	display: inline-block;
-  	background-size: contain;
-  	background-repeat: no-repeat;
-  	margin-right: 20px;
-  	transition: 0.3s;
-  }
-  .header.active .site-search .widget_product_search {
-  	width: initial;
-  	height: initial;
-  	overflow: hidden;
-  	transition: 0.3s;
-  }
   .header.active .header__phone > a {
   	display: none;
   	transition: 0.3s;
@@ -135,8 +112,63 @@
   }
   .header__phone form {
     margin-bottom: 0;
+  }
 }
+/*(max-width: 1481px)*/
+
+@media screen and (min-width: 993px) and (max-width: 1481px) {
+  .index-page .container {
+    padding: 0 4%;
+  } 
+  .index__category {
+    margin: 40px 0;
+  }
+  .index__category .index__category_item {
+    margin: 0 30px 0 0;
+  }
+  .index__category .index__category_item img {
+    width: 80px;
+  }
+  .index__category .index__category_item .title {
+    font-size: 22px;
+  }
+  .index__category .index__category_container {
+    justify-content: space-between;
+  }
+  .index__adv .index__adv_text {
+        padding: 0px 85px 0 0;
+  }
+  .index__slider_gallery .item * {
+    height: 360px!important;
+  }
+  .index__slider_gallery:before {
+    left: -95px;
+    bottom: -70px;
+    height: 490px;
+    width: 320px;
+  }
+  .index__slider_gallery:after {
+    top: 220px;
+    right: -155px;
+    height: 492px;
+    width: 360px;
+  }
+  .footer::before {
+    height: 295px;
+    width: 365px;
+    left: -197px;
+    top: -233px;
+  }
+  .footer::after {
+    right: -100px;
+    top: -265px;
+    height: 350px;
+    width: 200px;
+  }
 }
+/*screen and (min-device-width: 993) and (max-device-width: 1481)*/
+
+
 
 @media (max-width: 1381px) {
   .header .header__logo img {
@@ -354,7 +386,8 @@
   .index__adv .index__adv_list .index__adv_item img {
     margin-bottom: 20px;
     height: 50px;
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
   }
   .index__adv .index__adv_list .index__adv_item span {
     font-size: 16px;
@@ -372,7 +405,7 @@
   .index__adv .index__adv_list .index__adv_item:before {
     width: 70px;
     height: 70px;
-    left: 53px;
+    left: 30%;
     right: 0;
     top: -10px;
   }
@@ -551,14 +584,14 @@
   }
   .index__slider_gallery:before {
     left: -43px;
-    top: -63px;
+    top: -20px;
     bottom: initial;
     height: 213px;
     width: 143px;
   }
   .index__slider_gallery:after {
-    top: 54px;
-    right: -199px;
+    top: 55px;
+    right: -195px;
     height: 233px;
     width: 282px;
     transform: rotate(328deg);

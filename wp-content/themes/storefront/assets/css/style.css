@@ -128,6 +128,7 @@ div#primary {
 
 .header {
   max-width: 1920px;
+  height: 49px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -138,6 +139,9 @@ div#primary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.header > div:not(.mobile__nav) {
+	height: 49px;
 }
 
 .header.header_fixed {
@@ -296,7 +300,7 @@ div#primary {
   content: '';
   display: inline-block;
   position: absolute;
-  right: -1px;
+  right: -220px;
   top: -430px;
   background-image: url(../../assets/img/other/leaf_left1.png);
   background-size: contain;
@@ -449,9 +453,10 @@ div#primary {
 }
 
 .index__adv .index__adv_list .index__adv_item img {
-  height: 65px;
-  width: 85px;
-  object-fit: contain;
+	height: 65px;
+	min-width: 85px;
+	object-fit: contain;
+	max-width: 85px;
 }
 .index__adv .index__adv_list .index__adv_item span {
   margin: 0 0 0 30px;
@@ -498,8 +503,12 @@ div#primary {
   width: 100%;
   z-index: 1!important;
 }
-.index__slider_gallery .item {
-  padding: 0 15px;
+.index__slider_gallery .item:not(:nth-child(n+3)) {
+  padding: 0 15px 0 0;
+}
+.index__slider_gallery .item.mobile {
+	width: 85%;
+	margin: 0 auto;
 }
 article.leaf {
   width: 100%;
@@ -527,7 +536,7 @@ article.leaf {
   content: '';
   display: inline-block;
   position: absolute;
-  top: 255px;
+  top: 225px;
   right: -155px;
   background-image: url(../../assets/img/other/leaf_right1.png);
   background-size: contain;
@@ -535,6 +544,7 @@ article.leaf {
   height: 776px;
   width: 457px;
   z-index: -1;
+  transform: rotate(0deg)scaley(-1);
 }
 
 section.category__blocks {
@@ -573,12 +583,12 @@ section.category__blocks {
 .index__materials .item:hover .img {
   transform: scale(1.05);
   transition: 0.3s;
-  background-color: #B1A358;
+  background-color: #e98905;
 }
 .index__materials .item .img {
   width: 160px;
   height: 160px;
-  border: 1px dashed #B1A358;
+  border: 1px dashed #e98905;
   border-radius: 50%;
   position: relative;
   transition: 0.3s;
