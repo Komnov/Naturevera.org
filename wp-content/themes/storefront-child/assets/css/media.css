@@ -676,6 +676,9 @@
   .footer .footer__column.contacts > div:not(.title) {
     text-align: center;
   }
+  #main ul.products li.product-category.product {
+    margin: 0 0 30px 2%!important;
+  }
 }
 /*@media (max-width: 993px)*/
 

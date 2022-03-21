@@ -148,22 +148,22 @@ get_header(); ?>
     <section class="index__category">
         <div class="container">
             <div class="row index__category_container">
-            <div class="index__category_item">
+            <a class="index__category_item" href="/product-category/matrasy/">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat1.svg" alt="">
             <span class="title">Матрасы</span>
-            </div>
-            <div class="index__category_item">
+            </a>
+            <a class="index__category_item" href="/product-category/krovati/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat2.svg" alt="">
                 <span class="title">Интерьерные <br>кровати</span>
-            </div>
-            <div class="index__category_item">
+            </a>
+            <a class="index__category_item" href="/product-category/aksessuary/podushka/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat3.svg" alt="">
                 <span class="title">Подушки</span>
-            </div>
-            <div class="index__category_item">
+            </a>
+            <a class="index__category_item" href="/product-category/aksessuary/namatrasniki/">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_cat4.svg" alt="">
                 <span class="title">Наматрасники</span>
-            </div>
+            </a>
             </div>
         </div>
     </section>

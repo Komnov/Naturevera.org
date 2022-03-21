@@ -482,6 +482,10 @@ div#primary {
   width: initial;
   text-transform: uppercase;
 }
+.index__category .index__category_item:hover img {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
 .index__category .index__category_item:last-child {
   margin: 0 0;
 }
