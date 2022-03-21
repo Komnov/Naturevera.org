@@ -104,7 +104,9 @@ ul.products.columns-6,
 /*clear styles finish*/
 
 
-
+.site-main {
+    margin-bottom: 0!important;
+}
 ul.woocommerce-error {
     display: none;
 }
@@ -778,6 +780,7 @@ section.category__blocks {
 .storefront-breadcrumb {
 	margin: 10px 0 30px 0!important;
 	padding: 0 0 0px 0!important;
+  position: relative;
 }
 li.product-category.product {
 	box-shadow: 4px 4px 20px -5px #00000094;
@@ -937,12 +940,12 @@ header.woocommerce-products-header h1 {
   color: #05564e;
   font-weight: 500;
 }
-.woocommerce-products-header:before {
+.storefront-breadcrumb:before {
   content: '';
   display: inline-block;
   position: absolute;
-  left: -84px;
-  top: -45px;
+  left: -160px;
+  top: -10px;
   background-image: url(../../assets/img/other/leaf_left1.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -951,11 +954,11 @@ header.woocommerce-products-header h1 {
   z-index: -1;
   transform: rotate(337deg);
 }
-.woocommerce-products-header:after {
+.storefront-breadcrumb:after {
   content: '';
   display: inline-block;
   position: absolute;
-  top: -90px;
+  top: -35px;
   right: -255px;
   background-image: url(../../assets/img/other/leaf_right1.png);
   background-size: contain;
@@ -1472,6 +1475,28 @@ section.related.products .product.type-product {
 .napolnitely-page p {
 	margin: 0 0 10px 0;
 }
-.napolnitely-page
-.napolnitely-page
-.napolnitely-page
+.entry-title {
+  margin: 0 0 30px 30px;
+  color: #05564e;
+  font-weight: 500;
+}
+article.type-page.hentry {
+  margin: 0 0 0px 0;
+  padding: 0 40px;
+}
+/*sotrenichestvo-page*/
+#sotrenichestvo-page > .vc_column-inner > .wpb_wrapper > * {
+   box-shadow: 0 0 20px 4px #9d9d9d80;
+}
+#sotrenichestvo-page > .vc_column-inner > .wpb_wrapper > *:nth-child(odd) > *:last-child {
+  padding: 0px 13% 0 12%;
+}
+#sotrenichestvo-page > .vc_column-inner > .wpb_wrapper > *:nth-child(even) > *:first-child {
+  padding: 0px 12% 0 13%;
+}
+#sotrenichestvo-page .vc_column-inner {
+  padding: 0 0;
+}
+#sotrenichestvo-page > .vc_column-inner > .wpb_wrapper h4  span strong {
+  font-weight: 500;
+}
