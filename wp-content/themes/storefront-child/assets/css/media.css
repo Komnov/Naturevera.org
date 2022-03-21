@@ -78,6 +78,12 @@
   .index__slider_gallery .item.mobile {
     display: none
   }
+  #main ul.products li.product-category.product:first-child {
+  margin: 0 0 30px 0!important;
+  }
+  #main ul.products li.product-category.product.last {
+    margin: 0 0 30px 0!important;
+  }
 }
 
 /*@media (min-width: 993px)*/

@@ -286,32 +286,32 @@ div#primary {
   font-weight: 600;
 }
 .footer::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: -190px;
-  top: -450px;
-  background-image: url(../../assets/img/other/leaf_right1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 424px;
-  z-index: -1;
-  transform: scaleX(-1);
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: -254px;
+	top: -200px;
+	background-image: url(../../assets/img/other/leaf_right1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 240px;
+	width: 382px;
+	z-index: -1;
+	transform: scaleX(-1);
 }
 .footer::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  right: -6%;
-  top: -430px;
-  background-image: url(../../assets/img/other/leaf_left1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 424px;
-  z-index: -1;
-  transform: rotate(270deg)scaley(-1);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 2%;
+    top: -176px;
+    background-image: url(../../assets/img/other/leaf_left1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 225px;
+    width: 139px;
+    z-index: -1;
+    transform: rotate(270deg)scaley(-1);
 }
 
 .footer a {
@@ -851,12 +851,13 @@ li.product.type-product:hover {
   transform: scale(1.03);
 }
 .category__product_attr {
-    display: flex;
-    justify-content: space-between;
-    color: #05564E;
-    font-size: 18px;
-    align-items: flex-start;
-    line-height: initial;
+  display: flex;
+  justify-content: space-between;
+  color: #05564E;
+  font-size: 19px;
+  align-items: flex-start;
+  line-height: initial;
+  margin: 0 0 4px 0;
 }
 .category__product_attr > span:last-child {
   text-align: right;
@@ -880,6 +881,7 @@ ul.products  li.product.type-product {
   color: #05564E;
   font-size: 23px;
   margin: 0 0 10px 0!important;
+  font-weight: 500!important;
 }
 #main ul.products li.product.type-product.status-publish > a.product_type_simple {
   display: none;
@@ -896,7 +898,7 @@ ul.products.columns-5 {
 }
 #main ul.products li.product-category.product {
     width: 23%!important;
-    margin: 0 2% 30px 0!important;
+    margin: 0 0 30px 2.6%!important;
     background-color: #ffffffa8;
 }
 #main ul.products li.product-category.product a {
@@ -905,7 +907,7 @@ ul.products.columns-5 {
 }
 #main ul.products li.product-category.product img {
   height: 150px;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%!important;
   overflow: hidden;
   max-width: 300px;
@@ -960,6 +962,7 @@ header.woocommerce-products-header h1 {
 }
 .catalog__container {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   background-color: #ffffffa8;
   box-shadow: 0 0 20px 4px #0000004f;
@@ -1150,7 +1153,7 @@ header.woocommerce-products-header h1 {
   width: 100%;
   padding: 21px;
   font-size: 22px;
-  background-color: #333!important;
+  background-color: #f49400!important;
 }
 #formOrderOneClick .popup .close_order {
   right: 10px!important;
