@@ -260,7 +260,7 @@ get_header(); ?>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
                         <div class="item_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/ind_work_adv2.svg" alt=""></div>
-                        <span class="title">Конкуретная цена</span>
+                        <span class="title">Конкурентная цена</span>
                         <span class="desc">Мы предлагаем выгодные ценовые условия для наших партнеров. Это позволяет подобрать подходящие матрасы и аксессуары даже самым требовательным клиентам. Конкурентные цены на продукцию гарантируют активный рост прибыльности вашего бизнеса. </span>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-12 item">
