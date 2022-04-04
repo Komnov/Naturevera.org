@@ -29,11 +29,11 @@ if ($(window).width() < 1000) {
     }
 });
 // клон атрибутов
-$(function () {
-if ($(window).width() > 1000) {
-        $('#tab-additional_information').clone().appendTo('.woocommerce-product-gallery');
-    }
-});
+// $(function () {
+// if ($(window).width() > 1000) {
+//         $('#tab-additional_information').clone().appendTo('.woocommerce-product-gallery');
+//     }
+// });
 
 // разделяю категории и товары
 //$('li.product-category.product:last').after('<div class="catalog__width">Каталог товаров</div>');

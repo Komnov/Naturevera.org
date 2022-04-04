@@ -74,7 +74,7 @@
   }
   .woocommerce-tabs li.additional_information_tab,
   .woocommerce-tabs div[aria-labelledby=tab-title-additional_information] 
-  {display: none!important;}
+  
   .index__slider_gallery .item.mobile {
     display: none
   }

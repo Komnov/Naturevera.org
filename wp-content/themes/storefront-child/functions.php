@@ -99,3 +99,6 @@ add_action( 'after_setup_theme', 'remove_sections');
 function remove_sections() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
 }
+
+
+add_action('woocommerce_product_thumbnails', 'woocommerce_output_product_data_tabs', 40);
