@@ -90,3 +90,14 @@ $(function(){
         $(this).parent('.menu-item').children('.sub-menu').toggle(300)
     });
 });
+
+//в диллерах и филиалах ищем первые элементы для добавления иконок 
+$(function () {
+    $('#filials .wpb_wrapper').each(function() {
+        $(this).find('.phone:first').addClass('icon');
+    });
+    $('#scroll_dealers .city_block .dealer_item').each(function() {
+        $(this).find('.phone:first').addClass('icon');
+        $(this).find('.email:first').addClass('icon');
+    });
+});
