@@ -57,17 +57,17 @@ function my_filter_img( $quality ) {
 add_filter('woocommerce_get_image_size_single','add_single_size',2,10);
 function add_single_size($size){
 
-    $size['width'] = 757;
-    $size['height'] = 757;
+    $size['width'] = 800;
+    $size['height'] = 500;
     $size['crop']   = 0;
     return $size;
 }
 add_filter('woocommerce_get_image_size_gallery_thumbnail','add_gallery_thumbnail_size',2,10);
 function add_gallery_thumbnail_size($size){
 
-    $size['width'] = 757;
-    $size['height'] = 757;
-    $size['crop']   = 1;
+    $size['width'] = 300;
+    $size['height'] = 200;
+    $size['crop']   = 0;
     return $size;
 }
 
@@ -95,10 +95,11 @@ function theme_name_scripts() {
 }
 
 
-add_action( 'after_setup_theme', 'remove_sections');
-function remove_sections() {
-    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-}
+//выводим характеристики и кнопку купить под изображением в карточке
+add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_add_to_cart', 40);
+add_action('woocommerce_before_single_product_summary', 'woocommerce_output_product_data_tabs', 50);
 
-
-add_action('woocommerce_product_thumbnails', 'woocommerce_output_product_data_tabs', 40);
+//удаляю кнопку купить в описании карточки, характеристики, похожие товары
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );

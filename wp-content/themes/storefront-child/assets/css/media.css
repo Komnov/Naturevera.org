@@ -76,7 +76,9 @@
     color: #000;
   }
   .woocommerce-tabs li.additional_information_tab,
-  .woocommerce-tabs div[aria-labelledby=tab-title-additional_information] 
+  .woocommerce-tabs div[aria-labelledby=tab-title-additional_information] {
+    
+  }
   
   .index__slider_gallery .item.mobile {
     display: none

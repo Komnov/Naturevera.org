@@ -981,6 +981,61 @@ header.woocommerce-products-header h1 {
 /*category*/
 
 /*Product page*/
+.single-product .product {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-product .product .product-left #wpgs-gallery.woocommerce-product-gallery {
+  margin-bottom: 0px;
+}
+.single-product .product .product-left {
+  width: 45%;
+  margin-right: 2%;
+}
+.single-product .product .product-left .wcgs-carousel {
+  background-color: #ffffffa8;
+  box-shadow: 0px 0px 12px 4px #0000004f;
+  padding: 20px;
+  margin: 30px 0 0 0;
+}
+.single-product .product .product-left .wcgs-carousel .wcgs-lightbox {
+  display: none;
+}
+.single-product .product .product-left .gallery-navigation-carousel {
+  margin: 35px 0 0 0!important;
+}
+.single-product .product .product-left .slick-arrow::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    margin-right: 56px;
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 5px;
+    transform: rotate(45deg);
+}
+.single-product .product .product-left .slick-nav-prev::before {
+    transform: rotate(228deg);
+    left: 9px;
+}
+.single-product .product .product-left .wcgs-thumb img {
+  border:  none!important;
+}
+.single-product .product .summary {
+  width: 50%!important;
+}
+.single-product .product .related.products {
+  width: 100%;
+}
+.single-product .product .storefront-product-pagination {
+  width: 100%;
+}
 .right-sidebar .content-area {
 	width: 100%!important;
 }
@@ -995,16 +1050,15 @@ header.woocommerce-products-header h1 {
   content: '';
   width: 5px;
   height: 5px;
-  background-color: #f49400;
+  background-color: #005447;
   border-radius: 50%;
   position: absolute;
-  top: 9px;
+  top: 15px;
   left: -13px;
 }
 .card__desc {
     color: #000;
     font-size: 14px;
-    max-width: 80%;
 }
 .card__desc_list li {
   list-style-type: none;
@@ -1012,12 +1066,12 @@ header.woocommerce-products-header h1 {
 }
 .card__desc_list li:before {
   content: '';
-  width: 5px;
-  height: 5px;
-  background-color: #f49400;
+  width: 6px;
+  height: 6px;
+  background-color: #05564e;
   border-radius: 50%;
   position: absolute;
-  top: 8px;
+  top: 15px;
   left: -13px;
 }
 .card__desc .card__desc_adv {
@@ -1050,22 +1104,28 @@ header.woocommerce-products-header h1 {
 
 
 .card__desc > .title {
-	font-weight: 500;
-	font-size: 22px;
+    font-weight: 500;
+    font-size: 26px!important;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
 }
 
-.card__desc_add {}
+.card__desc_add {
+  padding: 30px 0 0 0;
+}
 .card__desc_add .item {
 	display: flex;
 	align-items: center;
-	font-weight: 500;
+  margin: 0 0 30px 0;
 }
 .card__desc_add .item .bg-img {
-	width: 60px;height: 50px;
-  min-width: 60px;min-height: 50px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
+  width: 90px;
+  height: 60px;
+  min-width: 90px;
+  min-height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .card__desc .card__desc_add .item .bg-img.a{background-image: url(../../assets/img/icons-card/a.svg);}
 .card__desc .card__desc_add .item .bg-img.b{background-image: url(../../assets/img/icons-card/b.svg);}
@@ -1105,7 +1165,8 @@ header.woocommerce-products-header h1 {
 
 
 .card__desc_add .item .title {
-	margin: 0 0 0 15px;
+	margin: 0 0 0 40px;
+  line-height: initial;
 }
 .woocommerce-product-attributes .woocommerce-product-attributes-item__label {
 	background-color: transparent;
@@ -1128,13 +1189,13 @@ header.woocommerce-products-header h1 {
 	background-image: url(../../assets/img/icons-card/4.svg);
 }
 .shop_attributes tr[class*="attribute_pa_nagruzka"] > th[class*="item__label"]:before {
-	background-image: url(../../assets/img/icons-card/pow-card.svg);
+	background-image: url(../../assets/img/icons-card/pow-card.png);
 }
 .shop_attributes tr[class*="attribute_pa_zhestkost-storon"] > th[class*="item__label"]:before {
 	background-image: url(../../assets/img/icons-card/zhest-card.svg);
 }
 .shop_attributes tr[class*="attributes-item--attribute_pa_vysota"] > th[class*="item__label"]:before {
-	background-image: url(../../assets/img/icons-card/height-card.svg);
+	background-image: url(../../assets/img/icons-card/height-card.png);
 }
 .shop_attributes tr[class*="attribute_pa_skruchen-v-rulon"] > th[class*="item__label"]:before {
 	background-image: url(../../assets/img/icons-card/4.svg);
@@ -1143,7 +1204,7 @@ header.woocommerce-products-header h1 {
   background-image: url(../../assets/img/icons-card/size.svg);
 }
 .shop_attributes tr[class*="attribute_pa_zhestkost"] > th[class*="item__label"]:before {
-  background-image: url(../../assets/img/icons-card/zhestkost.svg);
+  background-image: url(../../assets/img/icons-card/zhestkost.png);
 }
 .shop_attributes tr[class*="attribute_pa_kreplenie"] > th[class*="item__label"]:before {
   background-image: url(../../assets/img/icons-card/kreplenie.svg);
@@ -1184,6 +1245,9 @@ ol.flex-control-nav.flex-control-thumbs li {
     display: flex;
     flex-direction: column;
     margin-bottom: 0px;
+    padding: 25px 0 0 0;
+    margin: 0!important;
+    width: 100%;
 }
 .woocommerce-product-gallery #tab-additional_information {
   font-size: 22px;
@@ -1193,9 +1257,13 @@ ol.flex-control-nav.flex-control-thumbs li {
   font-weight: 600;
 }
  #tab-additional_information .shop_attributes .woocommerce-product-attributes-item__label {
-  padding: 5px 7px;
-  font-size: 18px;
+  padding: 10px 7px;
+  font-size: 24px;
   font-weight: initial;
+  background-color: #f49400;
+  color: #fff;
+  text-transform: uppercase;
+  justify-content: center;
 }
  #tab-additional_information .shop_attributes {
   margin: 15px 0 0 0;
@@ -1206,12 +1274,13 @@ ol.flex-control-nav.flex-control-thumbs li {
   height: 40px;
 }
  #tab-additional_information .shop_attributes .woocommerce-product-attributes-item__value {
-  font-size: 16px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-  background-color: #e3e3e3!important;
+  font-size: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
   border: 1px solid #f8f8f8;
+  color: #005447;
 }
 
 .beds__desc {
@@ -1256,7 +1325,7 @@ ol.flex-control-nav.flex-control-thumbs li {
     flex-wrap: wrap;
 }
 #tab-additional_information tr.woocommerce-product-attributes-item {
-    width: 33%;
+    width: 33.3%;
     margin: 0 0 20px 0;
 }
 .product .entry-summary .single_add_to_cart_button{
@@ -1264,7 +1333,51 @@ ol.flex-control-nav.flex-control-thumbs li {
   font-size: 20px;
   margin: 30px 0 0 0;
 }
-
+.woocommerce-product-gallery .woocommerce-product-gallery__image {
+    background-color: #ffffffa8;
+    box-shadow: 0 0 20px 4px #0000004f;
+}
+.single-product div.product .woocommerce-product-gallery .flex-viewport {
+  box-shadow: 0 0 20px 4px #0000004f;
+}
+.single-product div.product .woocommerce-product-gallery .flex-viewport .woocommerce-product-gallery__image {
+  box-shadow: none;
+}
+.summary .woocommerce-product-details__short-description {
+  background-color: #ffffffa8;
+  box-shadow: 0 0 12px 4px #0000004f;
+  padding: 30px;
+  margin: 0 15px 0 3%;
+}
+.summary .woocommerce-product-details__short-description * {
+  color: #05564e;
+  font-size: 22px;
+}
+.single-product div.product .summary .product_title {
+    margin: 15px 0 30px 2%;
+    font-size: 60px;
+}
+.summary .woocommerce-product-details__short-description ul {
+  margin: 0 0px 30px 25px;
+}
+.single-product .product-left .clickBuyButton {
+  margin: 60px 0 0 0;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+.single-product .product-left .wc-tabs {
+  display: none;
+}
+.single-product .product-left #tab-additional_information {
+    width: 100%;
+    font-size: 0;
+}
+.single-product .product-left .woocommerce-tabs {
+    padding: 10px 0 0 0;
+}
+.single-product div.product .product_meta {
+  display: none;
+}
 /*Product page finish*/
 
 section.related.products .product.type-product {
@@ -1739,3 +1852,12 @@ article.type-page.hentry {
 #scroll_dealers .city_block .email.icon:before {background-image: url(../../assets/img/icons/mail.png);}
 #scroll_dealers .city_block .dealer_name:before {background-image: url(../../assets/img/icons/user.png);}
 #scroll_dealers .city_block .site:before {background-image: url(../../assets/img/icons/chrome.png);}
+
+
+
+
+
+
+tr.woocommerce-product-attributes-item.woocommerce-product-attributes-item--attribute_pa_mozhno-skrutit-v-rulon {
+    display: none;
+}
