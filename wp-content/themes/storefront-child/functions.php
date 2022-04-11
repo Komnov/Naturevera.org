@@ -98,6 +98,7 @@ function theme_name_scripts() {
 //выводим характеристики и кнопку купить под изображением в карточке
 add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_add_to_cart', 40);
 add_action('woocommerce_before_single_product_summary', 'woocommerce_output_product_data_tabs', 50);
+add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_title', 5);
 
 //удаляю кнопку купить в описании карточки, характеристики, похожие товары
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );

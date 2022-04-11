@@ -1378,6 +1378,10 @@ ol.flex-control-nav.flex-control-thumbs li {
 .single-product div.product .product_meta {
   display: none;
 }
+.single-product .product .product-left #wpgs-gallery.woocommerce-product-gallery {
+    width: 100%!important;
+    max-width: 100%!important;
+  }
 /*Product page finish*/
 
 section.related.products .product.type-product {
