@@ -968,7 +968,7 @@
     font-size: 30px;
   }
   #tab-additional_information tr.woocommerce-product-attributes-item {
-    width: 33%;
+    width: 33.3%;
   }
   #tab-additional_information .shop_attributes .woocommerce-product-attributes-item__label:before {
     width: 20px;
@@ -982,6 +982,10 @@
   }
   .summary .woocommerce-product-details__short-description * {
     font-size: 16px;
+  }
+  .product-left #wpgs-gallery .wcgs-carousel.skrutka:after {
+    width: 60px;
+    height: 60px;
   }
 }
 /*@media (max-width: 993px)*/

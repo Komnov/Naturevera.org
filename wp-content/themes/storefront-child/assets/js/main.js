@@ -101,3 +101,12 @@ $(function () {
         $(this).find('.email:first').addClass('icon');
     });
 });
+
+//в диллерах и филиалах ищем первые элементы для добавления иконок 
+$(function () {
+    let fndSkrutka = $('.product-left .woocommerce-product-attributes .woocommerce-product-attributes-item--attribute_pa_mozhno-skrutit-v-rulon');
+    console.log(fndSkrutka);
+    if (fndSkrutka.length > 0) {
+        $('.product-left #wpgs-gallery .wcgs-carousel').addClass('skrutka');
+    } 
+});

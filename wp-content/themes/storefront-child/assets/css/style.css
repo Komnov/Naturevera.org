@@ -1266,7 +1266,7 @@ ol.flex-control-nav.flex-control-thumbs li {
   justify-content: center;
 }
  #tab-additional_information .shop_attributes {
-  margin: 15px 0 0 0;
+  margin: 0px 0 0 0;
  }
  #tab-additional_information .shop_attributes .woocommerce-product-attributes-item__label:before {
   padding: 10px 15px;
@@ -1326,7 +1326,6 @@ ol.flex-control-nav.flex-control-thumbs li {
 }
 #tab-additional_information tr.woocommerce-product-attributes-item {
     width: 33.3%;
-    margin: 0 0 20px 0;
 }
 .product .entry-summary .single_add_to_cart_button{
   padding: 6px 0;
@@ -1348,6 +1347,7 @@ ol.flex-control-nav.flex-control-thumbs li {
   box-shadow: 0 0 12px 4px #0000004f;
   padding: 30px;
   margin: 0 15px 0 3%;
+  margin: 0 15px 25px 3%;
 }
 .summary .woocommerce-product-details__short-description * {
   color: #05564e;
@@ -1373,7 +1373,9 @@ ol.flex-control-nav.flex-control-thumbs li {
     font-size: 0;
 }
 .single-product .product-left .woocommerce-tabs {
-    padding: 10px 0 0 0;
+    padding: 0px 0 0 0;
+    box-shadow: 0 0 12px 4px #0000004f;
+    margin: 30px 0 30px 0;
 }
 .single-product div.product .product_meta {
   display: none;
@@ -1381,7 +1383,21 @@ ol.flex-control-nav.flex-control-thumbs li {
 .single-product .product .product-left #wpgs-gallery.woocommerce-product-gallery {
     width: 100%!important;
     max-width: 100%!important;
-  }
+}
+.product-left #wpgs-gallery .wcgs-carousel.skrutka:after {
+  content: '';
+  background-image: url(../../assets/img/icons-card/skrutka.png);
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background-size: contain;
+}
+.product-left #wpgs-gallery img {
+  margin: 0 auto;
+}
 /*Product page finish*/
 
 section.related.products .product.type-product {
