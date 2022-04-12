@@ -1658,7 +1658,8 @@ article.type-page.hentry {
   justify-content: flex-start;
 }
 #filials .item .adress:before,
-#filials .item .phone:before {
+#filials .item .phone:before,
+#filials .item .mail:before {
   content: '';
   width: 25px;
   height: 25px;
@@ -1672,6 +1673,7 @@ article.type-page.hentry {
 }
 #filials .item .adress:before {background-image: url(../../assets/img/icons/location.png);}
 #filials .item .wpb_wrapper > .phone.icon:before {content: ''; background-image: url(../../assets/img/icons/phone.png);}
+#filials .item .mail:before {background-image: url(../../assets/img/icons/mail.png);}
 
 #scroll_dealers .alphabet {
   display: none;
