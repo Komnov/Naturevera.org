@@ -57,7 +57,7 @@ if ($(window).width() < 1500) {
 });
 
 // fix header
-/*$(function() {
+$(function() {
     let header = $('.header');
     
     $(window).scroll(function() {
@@ -67,7 +67,7 @@ if ($(window).width() < 1500) {
         header.removeClass('header_fixed');
         }
     });
-});*/
+});
 
 // скрыем блоки для адаптива
 $(function () {
@@ -109,7 +109,6 @@ $(function () {
     if (fndSkrutka.length > 0) {
         $('.product-left #wpgs-gallery .wcgs-carousel').addClass('skrutka');
     } 
-});
 });
 
 //кнопка наверх
