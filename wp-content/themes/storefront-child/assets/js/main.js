@@ -59,7 +59,6 @@ if ($(window).width() < 1500) {
 // fix header
 $(function() {
     let header = $('.header');
-    
     $(window).scroll(function() {
         if($(this).scrollTop() > 350) {
         header.addClass('header_fixed');
@@ -111,5 +110,23 @@ $(function () {
     } 
 });
 
+<<<<<<< HEAD
 //убираем запятые в атрибутах
 
+=======
+//кнопка наверх
+$(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 100) {
+            $('.scroll-top-container ').show();
+        } else {
+            $('.scroll-top-container ').hide();
+        }
+    });
+ 
+    $('.scroll-top-container ').click(function(){
+        $('html, body').animate({scrollTop: 0}, 100);
+        return false;
+    });
+});
+>>>>>>> 55962dd7a6edcb3635ba7a38a6835787a913563e
