@@ -19,7 +19,7 @@ add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 add_action( 'woocommerce_after_shop_loop_item', 'custom_display_post_meta', 9 );
 function custom_display_post_meta() {
    global $product;
-   $attr = array('pa_nagruzka', 'skrutit-v-rulon', 'pa_vysota', 'pa_razmer', 'pa_zhestkost', 'pa_zhestkost-storon', ); // указываем массив нужных атрибутов для вывода
+   $attr = array('pa_nagruzka', 'skrutit-v-rulon', 'pa_vysota', 'pa_razmer', 'pa_zhestkost', 'pa_zhestkost-storon', 'pa_vysota-izgolovya', 'pa_vysota-nozhki', ); // указываем массив нужных атрибутов для вывода
    foreach ( $attr as $key=>$attribute ) {
    $values = wc_get_product_terms( $product->id, $attribute, array( 'fields' => 'names' ) );
    if (!empty($values))

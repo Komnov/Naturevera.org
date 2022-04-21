@@ -149,6 +149,8 @@ div#primary {
 	height: 49px;
 }
 
+<<<<<<< HEAD
+=======
 .header.header_fixed {
   width: 100%;
   position: fixed;
@@ -161,6 +163,7 @@ div#primary {
   transition: 0.3s;
 }
 
+>>>>>>> 55962dd7a6edcb3635ba7a38a6835787a913563e
 .header .header__logo {
   width: 25%;
   display: flex;
@@ -513,10 +516,10 @@ div#primary {
   z-index: 1!important;
 }
 .index__slider_gallery .item:not(:nth-child(n+3)) {
-  padding: 0 15px 0 0;
+  padding: 0 20px 0 0;
 }
 .index__slider_gallery .item.mobile {
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 }
 article.leaf {
@@ -839,6 +842,8 @@ nav.storefront-product-pagination {
   margin: 15px 0 0 0;
   text-transform: uppercase;
   font-weight: initial;
+  margin-top: auto!important;
+  top: 10px;
 }
 .product.type-product .product_type_simple {
   margin: 10px 0 0 0;
@@ -1170,7 +1175,6 @@ header.woocommerce-products-header h1 {
 }
 .woocommerce-product-attributes .woocommerce-product-attributes-item__label {
 	background-color: transparent;
-	border: 1px solid #f8f8f8;
 	display: flex;
 	align-items: center;
 	color: #000;
@@ -1278,11 +1282,10 @@ ol.flex-control-nav.flex-control-thumbs li {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #fff;
-  border: 1px solid #f8f8f8;
+  background-color: #ffffffb3;
   color: #005447;
   text-align:  center;
-  height: 100%;
+  height: initial;
 }
 
 .beds__desc {
@@ -1321,13 +1324,16 @@ ol.flex-control-nav.flex-control-thumbs li {
   overflow: hidden;
 }
 #tab-additional_information .shop_attributes tbody {
-    display: flex;
-    line-height: 1;
-    text-align: center;
-    flex-wrap: wrap;
+  display: flex;
+  line-height: 1;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 #tab-additional_information tr.woocommerce-product-attributes-item {
-    width: 33.3%;
+    width: 32.8%;
+    box-shadow: -1px 1px 6px 2px #00000042;
 }
 .product .entry-summary .single_add_to_cart_button{
   padding: 6px 0;
@@ -1352,18 +1358,23 @@ ol.flex-control-nav.flex-control-thumbs li {
   margin: 0 15px 25px 3%;
 }
 .summary .woocommerce-product-details__short-description * {
-  color: #05564e;
-  font-size: 22px;
+  color: #32574f;
+  font-size: 20px;
+  line-height: 28px;
+}
+.summary .woocommerce-product-details__short-description strong {
+  font-weight: 500;
 }
 .single-product div.product .summary .product_title {
-    margin: 15px 0 30px 2%;
+    margin: 15px 0 20px 2%;
     font-size: 60px;
+    text-transform: uppercase;
 }
 .summary .woocommerce-product-details__short-description ul {
   margin: 0 0px 30px 25px;
 }
 .single-product .product-left .clickBuyButton {
-  margin: 60px 0 0 0;
+  margin: 30px 0 0 0;
   text-transform: uppercase;
   font-size: 26px;
 }
@@ -1376,7 +1387,6 @@ ol.flex-control-nav.flex-control-thumbs li {
 }
 .single-product .product-left .woocommerce-tabs {
     padding: 0px 0 0 0;
-    box-shadow: 0 0 12px 4px #0000004f;
     margin: 30px 0 30px 0;
 }
 .single-product div.product .product_meta {
@@ -1401,11 +1411,55 @@ ol.flex-control-nav.flex-control-thumbs li {
   margin: 0 auto;
 }
 .product-left  #wpgs-gallery .gallery-navigation-carousel .slick-slide {
-    max-height: 140px;
-    overflow: hidden;
+  height: 120px;
+  overflow: hidden;
 }
 .product-left .wcgs-gallery-preloader {
   background-color: transparent;
+}
+.woocommerce-product-attributes-item--attribute_pa_gipoallergennye-napolniteli .woocommerce-product-attributes-item__label {
+  font-size: 14px!important;
+}
+.woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm,
+.woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm {
+    width: 49%!important;
+}
+.woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm *:before,
+.woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm *:before {
+  content:  none!important;
+}
+.woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm .woocommerce-product-attributes-item__label,
+.woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__label {
+  font-size: 18px!important;
+}
+.woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__value p {
+  padding: 0 30%;
+}
+.woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm .woocommerce-product-attributes-item__value p {
+  padding: 0 10%;
+}
+.woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm .woocommerce-product-attributes-item__value p,
+.woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__value p {
+  line-height:  55px;
+}
+.single-product div.product .summary .product_subtitle {
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  font-size: 26px;
+}
+.single-product div.product .summary {
+  margin-bottom: 0!important;
+}
+.summary .woocommerce-product-details__short-description .beds__desc .image {
+  margin: 30px 0 0 0;
+  width: 330px;
+}
+tr.woocommerce-product-attributes-item.woocommerce-product-attributes-item--attribute_pa_mozhno-skrutit-v-rulon {
+    display: none;
+}
+.product-left #wpgs-gallery .slick-slide.wcgs-thumb img {
+  height: 100%;
+  object-fit:  cover;
 }
 /*Product page finish*/
 
@@ -1499,8 +1553,12 @@ article.type-page.hentry {
   padding: 0 40px;
 }
 /*sotrenichestvo-page*/
+#sotrenichestvo-page  {
+  margin:  0 0 30px 0;
+}
 #sotrenichestvo-page > .vc_column-inner > .wpb_wrapper > * {
    box-shadow: 0 0 20px 4px #9d9d9d80;
+   margin:  0 0;
 }
 #sotrenichestvo-page > .vc_column-inner > .wpb_wrapper > *:nth-child(odd) > *:last-child {
   padding: 0px 13% 0 12%;
@@ -1513,6 +1571,125 @@ article.type-page.hentry {
 }
 #sotrenichestvo-page > .vc_column-inner > .wpb_wrapper h4  span strong {
   font-weight: 500;
+}
+#sotrenichestvo-form {
+    padding: 30px 30px;
+}
+.sotrenichestvo-form-row {
+  box-shadow: 0 0 20px 4px #9d9d9d80;
+  padding:  0px 0;
+  background-color: rgba(255,255,255,0.66);
+  margin:  0 0 30px 0;
+}
+.sotrenichestvo-form-row .vc_column-inner {
+  padding:  0 0!important;
+}
+#sotrenichestvo-form * {
+  color:  #000;
+}
+#sotrenichestvo-form .title {
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height:  initial;
+}
+#sotrenichestvo-form .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 21px;
+  margin: 30px 0 40px 0;
+  line-height: initial;
+}
+#sotrenichestvo-form .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f49400;
+  padding: 30px 25px;
+}
+#sotrenichestvo-form .form > br {
+  display:  none;
+}
+#sotrenichestvo-form label {
+  display: flex;
+  width: 30%;
+}
+#sotrenichestvo-form label * {
+  max-width:  100%;
+}
+#sotrenichestvo-form label input {
+  border: none;
+  background-color: #fff;
+  outline:  none;
+}
+#sotrenichestvo-form label input:focus,
+#sotrenichestvo-form label input:hover {
+  box-shadow: 5px 5px 6px -2px #313131ad;
+  transition: 0.3s
+}
+#sotrenichestvo-form .wpcf7-spinner {
+  display:  none;
+}
+#sotrenichestvo-form .pc-text {
+  margin: 20px 0 0 0;
+}
+#sotrenichestvo-form input[type="submit"] {
+  height: 50px;
+  line-height: initial;
+  margin: 20px 0 0 0;
+  padding: 0 45px;
+  background-color: #005447;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: 0.3s;
+}
+#sotrenichestvo-form input[type="submit"]:hover {
+  transition:  0.3s;
+  transform: scale(1.03);
+  box-shadow: 5px 5px 6px -2px #313131ad;
+}
+#sotrenichestvo-form .info .phone:before,
+#sotrenichestvo-form .info .mail:before,
+#sotrenichestvo-form .info .contact:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    top: 3px;
+    position: relative;
+}
+#sotrenichestvo-form .info .contact:before {background-image: url(../../assets/img/icons/user.png);}
+#sotrenichestvo-form .info .phone:before {background-image: url(../../assets/img/icons/phone.png);}
+#sotrenichestvo-form .info .mail:before {background-image: url(../../assets/img/icons/mail.png);}
+#sotrenichestvo-form .info .contact span:last-child {
+  position:  relative;
+  left: 31px;
+}
+.sotrenichestvo-form-row .form-image * {
+  height:  100%;
+}
+.sotrenichestvo-form-row form {
+  margin:  0 0;
+}
+.sotrenichestvo-form-row .wpcf7-response-output {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  border-color: #005447;
+}
+.sotrenichestvo-form-row .form-image img {
+  object-fit:  cover;
 }
 /* napolnitely-page */
 .napolnitely-page {
@@ -1883,12 +2060,3 @@ article.type-page.hentry {
 #scroll_dealers .city_block .email.icon:before {background-image: url(../../assets/img/icons/mail.png);}
 #scroll_dealers .city_block .dealer_name:before {background-image: url(../../assets/img/icons/user.png);}
 #scroll_dealers .city_block .site:before {background-image: url(../../assets/img/icons/chrome.png);}
-
-
-
-
-
-
-tr.woocommerce-product-attributes-item.woocommerce-product-attributes-item--attribute_pa_mozhno-skrutit-v-rulon {
-    display: none;
-}
