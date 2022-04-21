@@ -1026,10 +1026,6 @@
   #scroll_dealers .wrap {
     grid-template-columns: 1fr;
   } 
-  .scroll-top-container {
-    right: 10px;
-    transform: scale(0.7);
-  }
 }
 /*@media (max-width: 779px)*/
 
