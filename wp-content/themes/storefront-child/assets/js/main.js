@@ -57,7 +57,7 @@ if ($(window).width() < 1500) {
 });
 
 // fix header
-/*$(function() {
+$(function() {
     let header = $('.header');
     
     $(window).scroll(function() {
@@ -67,7 +67,7 @@ if ($(window).width() < 1500) {
         header.removeClass('header_fixed');
         }
     });
-});*/
+});
 
 // скрыем блоки для адаптива
 $(function () {
@@ -110,3 +110,6 @@ $(function () {
         $('.product-left #wpgs-gallery .wcgs-carousel').addClass('skrutka');
     } 
 });
+
+//убираем запятые в атрибутах
+
