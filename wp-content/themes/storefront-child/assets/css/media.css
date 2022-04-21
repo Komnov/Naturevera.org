@@ -1179,7 +1179,6 @@
   #scroll_dealers .wrap {
     grid-template-columns: 1fr;
   } 
-<<<<<<< HEAD
   #about-company .vc_column_container>.vc_column-inner {
     padding:  10px 10px!important;
   }
@@ -1279,7 +1278,6 @@
   .scroll-top-container {
     right: 10px;
     transform: scale(0.7);
->>>>>>> 55962dd7a6edcb3635ba7a38a6835787a913563e
   }
 }
 /*@media (max-width: 779px)*/

@@ -57,8 +57,9 @@ if ($(window).width() < 1500) {
 });
 
 // fix header
-$(function() {
+/*$(function() {
     let header = $('.header');
+    
     $(window).scroll(function() {
         if($(this).scrollTop() > 350) {
         header.addClass('header_fixed');
@@ -66,7 +67,7 @@ $(function() {
         header.removeClass('header_fixed');
         }
     });
-});
+});*/
 
 // скрыем блоки для адаптива
 $(function () {
@@ -109,11 +110,8 @@ $(function () {
         $('.product-left #wpgs-gallery .wcgs-carousel').addClass('skrutka');
     } 
 });
+});
 
-<<<<<<< HEAD
-//убираем запятые в атрибутах
-
-=======
 //кнопка наверх
 $(function(){
     $(window).scroll(function(){
@@ -129,4 +127,3 @@ $(function(){
         return false;
     });
 });
->>>>>>> 55962dd7a6edcb3635ba7a38a6835787a913563e
