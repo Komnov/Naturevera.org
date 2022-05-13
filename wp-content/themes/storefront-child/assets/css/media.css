@@ -1120,7 +1120,7 @@
   }
 
   #history-slider-row {
-    margin-top: 30px !important;
+    margin-top: 15px !important;
     padding-top: 0px !important;
     padding-bottom: 30px !important;
     background-image: url(http://naturavera.org/wp-content/uploads/2022/03/history_bg-1.png?id=814) !important;
@@ -1139,6 +1139,80 @@
   }
   #about-history .vc_custom_1648113518152  {
     display: none;
+  }
+  #contact-page .contacts-about > .title {
+    font-size: 18px;
+    line-height: initial;
+  }
+  #contact-page .contacts-about > .geo {
+    font-size: 16px;
+    line-height: initial;
+    margin: 0px 0 15px 0;
+  }
+  #contact-page .contacts-about > .block {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 15px 0;
+  }
+  #contact-page .contacts-about > .block .user * {
+    font-size: 14px;
+  }
+  #contact-page .contacts-about > .block .phone:before, 
+  #contact-page .contacts-about > .block .mail:before, 
+  #contact-page .contacts-about > .block .website:before {
+    content:  none;
+  }
+  #contact-page {
+    padding: 20px 5px;
+  }
+  #contact-page .contacts-about > .block .user {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #contact-page .contacts-about > .block .user .name {
+    padding: 0 10px 0 0;
+  }
+    #contact-page .contacts-about > .block .user .mail {
+      width: 100%;
+    }
+  #contact-page .contacts-about > .block .user:not(:last-child) {
+    margin:  0 0 20px 0;
+  }
+  #contact-page .contacts-about > .block * {
+    margin: 0 0 5px 0;
+  }
+  #contact-page .contacts-about > .block * {
+    font-size: 14px;
+  }
+  #contact-page a.website.hidden {
+    display:  none;
+  }
+  #contact-page .contacts-about > .block .title {
+    font-size: 18px;
+    margin:  0 0 10px 0;
+  }
+  #contact-page .contacts-about > .block .name:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 0 4px 0 0;
+  position: relative;
+  top: 3px;
+  background-image: url(../../assets/img/icons/user.png);
+  }
+  #company-adv-mob div#n2-ss-7 [data-hide-mobileportrait="1"],
+  #about-history div#n2-ss-8 [data-hide-mobileportrait="1"] {
+    display:  initial!important;
+  }
+  div#about-history {
+    margin-top: 0!important;
   }
 }
 /*@media (max-width: 993px)*/
@@ -1187,9 +1261,9 @@
     top: initial;
     bottom: 10px;
     right: 10%;
-    width: 278px;
+    width: 290px;
     height: 70px;
-    border-radius: 30px;
+    border-radius: 5px;
   }
   .napolnitely-page .title span {
     font-size: 22px;

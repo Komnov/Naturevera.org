@@ -190,9 +190,10 @@ div#primary {
   top: 0;
   z-index: 100;
   background-color: #fffc;
-  padding: 10px 20px;
+  padding: 10px 0px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin:  0;
 }
 .header .header__logo {
   width: 25%;
@@ -1515,7 +1516,6 @@ section.related.products .product.type-product {
   position: relative;
   display: flex;
   flex: 1;
-  box-shadow: 0 0 20px 4px #0000004f;
 }
 .contact-block-map {
   background-color: #ffffff9c;
@@ -2090,3 +2090,114 @@ article.type-page.hentry {
 #scroll_dealers .city_block .email.icon:before {background-image: url(../../assets/img/icons/mail.png);}
 #scroll_dealers .city_block .dealer_name:before {background-image: url(../../assets/img/icons/user.png);}
 #scroll_dealers .city_block .site:before {background-image: url(../../assets/img/icons/chrome.png);}
+
+/*contact page*/
+
+#contact-page {
+  background-color: #ffffffa8;
+  box-shadow: 0 0 20px 4px #0000004f;
+  padding:  20px;
+}
+#contact-page .contacts-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#contact-page .contacts-about > .title {
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  font-size: 30px;
+  text-transform:  uppercase;
+  width: 100%;
+}
+#contact-page .contacts-about > .geo {
+  color: #000;
+  text-align: center;
+  font-size: 22px;
+  margin: 0px 0 10px 0;
+  width: 100%;
+}
+#contact-page .contacts-about > .geo:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  background-image: url(../../assets/img/icons/location.png);
+  position: relative;
+  top: 5px;
+} 
+#contact-page .contacts-about > .block {
+  display: flex;
+  width: 49%;
+  border: 1px solid #05564e;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 0 30px 0;
+  align-items:  flex-start;
+}
+#contact-page .contacts-about > .block .title {
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  font-size: 26px;
+  text-transform:  uppercase;
+  width: 100%;
+  margin: 0 0 15px 0;
+  line-height: initial;
+  display: flex;
+  justify-content: center;
+}
+#contact-page .contacts-about > .block .user {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#contact-page .contacts-about > .block * {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+#contact-page .contacts-about > .block * {
+  margin: 0 0 10px 0;
+}
+#contact-page .contacts-about > .block .phone:before,
+#contact-page .contacts-about > .block .mail:before,
+#contact-page .contacts-about > .block .website:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 6px;
+}
+#contact-page .contacts-about > .block .phone:before {
+  background-image: url(../../assets/img/icons/phone.png);
+}
+#contact-page .contacts-about > .block .mail:before {
+  background-image: url(../../assets/img/icons/mail.png);
+}
+#contact-page .contacts-about > .block .website:before {
+  background-image: url(../../assets/img/icons/chrome.png);
+}
+.contact-block-map {
+  display: none;
+}
+#contact-page a.website.hidden {
+    opacity: 0;
+    cursor: default;
+}
+/*contact page*/
