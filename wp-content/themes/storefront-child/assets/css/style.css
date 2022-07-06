@@ -2022,7 +2022,7 @@ article.type-page.hentry {
 }
 #filials .item .adress:before {background-image: url(../../assets/img/icons/location.png);}
 #filials .item .wpb_wrapper > .phone.icon:before {content: ''; background-image: url(../../assets/img/icons/phone.png);}
-#filials .item .mail:before {background-image: url(../../assets/img/icons/mail.png);}
+#filials .item .mail:before {background-image: url(../../assets/img/icons/mail.png); position: relative; top: 6px;}
 
 #scroll_dealers .alphabet {
   display: none;
