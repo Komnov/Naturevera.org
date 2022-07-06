@@ -2201,3 +2201,117 @@ article.type-page.hentry {
     cursor: default;
 }
 /*contact page*/
+
+/*Мобильный каталог*/
+.mobile__catalog_book {
+    display: flex!important;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.mobile__catalog_book .sections {
+  width: 100%;
+}
+.mobile__catalog_book .sections .section {
+    display: block;
+    position: relative;
+}
+.mobile__catalog_book .sections .section img {
+    display: block;
+    object-fit: contain;
+    min-width: 100%;
+}
+.mobile__catalog_book .content__book {
+    display: flex!important;
+    flex-direction: column;
+    height: initial!important;
+}
+.mobile__catalog_book .content__book .content__book_links {
+    display: flex;
+    flex-direction: column;
+    padding: 8% 7%;
+    counter-reset: section 2;
+}
+.mobile__catalog_book .content__book .content__book_links * {
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.mobile__catalog_book .content__book_links span:not(.title) {
+    padding: 0 0 10px 0;
+}
+.mobile__catalog_book .content__book_links span.title {
+    font-weight: 600;
+    margin: 0 0 7px 0px;
+}
+.mobile__catalog_book .content__book .content__book_links a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.mobile__catalog_book .content__book .content__book_links a:after {
+    content: '';
+    width: 100%;
+    display: flex;
+    border-bottom: 1px dashed #000;
+    align-self: flex-end;
+    position: relative;
+    top: -18px;
+    margin: 0 10px 0 12px;
+}
+.mobile__catalog_book .content__book_links span:not(.title):after {
+}
+.mobile__catalog_book .content__book_links span:not(.title):after {
+    counter-increment: section;
+    content: counter(section) "";
+    text-align: left;
+    display: inline-block;
+    width: 21px;
+}
+.mobile__catalog_book .section:not(.content__book) > a {
+    position: absolute;
+    bottom: 11px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.mobile__catalog_book .content__book_links span img {
+  max-width: 45px;
+  object-fit: contain!important;
+  min-width: initial!important;
+  margin: 0 15px 0 0;
+}
+.mobile__catalog_book .section.popup {
+  position: relative;
+}
+.mobile__catalog_book .section.popup .comfy_btn {
+  position: absolute;
+  left: 15px;
+  top: 29%;
+
+}
+.mobile__catalog_book .section.popup .comfy_btn img {
+  width: 45px;
+  max-width: 45px;
+  position: relative;
+  animation: popup-bads  1s infinite linear;
+  border-radius: 100%;
+}
+@keyframes popup-bads {
+  0% {
+    top:  0;
+  }
+  50% {
+    top: 3px;
+    box-shadow: 0 0 4px 1px #04554e;
+    border-radius: 100%;
+  }
+  100% {
+    top:  0;
+  }
+}
+/*Мобильный каталог*/

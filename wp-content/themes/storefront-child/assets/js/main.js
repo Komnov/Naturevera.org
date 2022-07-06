@@ -125,4 +125,11 @@ $(function(){
         $('html, body').animate({scrollTop: 0}, 100);
         return false;
     });
+
+    //планые якоря в моб. каталоге (книга)
+    jQuery(".content__book_links").on('click', '[href*="#"]', function(e){
+      var fixed_offset = 100;
+      jQuery('html,body').stop().animate({ scrollTop: jQuery(this.hash).offset().top - fixed_offset }, 300);
+      e.preventDefault();
+    });
 });
