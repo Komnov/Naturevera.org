@@ -45,7 +45,7 @@
                     <div>141603, Московская область, г. Клин,</div>
                     <div>Ленинградское шоссе, 88 км., стр. 3, офис 102</div>
                     <div>Телефон: <a href="tel:84951059294">+7-495-105-92-94</a></div>
-                    <div>E-mail: <a href="mail:welcome@naturavera.com">welcome@naturavera.com</a></div>
+                    <div>E-mail: <a href="mail:INFO@2-MK.COM">INFO@2-MK.COM</a></div>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
             <?php echo do_shortcode('[contact-form-7 id="149" title="Напишите нам!"]'); ?>
         </div>
     </div>
-    <div class="scroll-top-container">
+    <div class="scroll-top-container" style="">
         <a href="#" id="scroll_top" title="Наверх"></a>
     </div>
 

@@ -4,7 +4,7 @@
     justify-content: center;
   }
   .index__slider_gallery .item {
-    padding: 0 15px;
+    padding: 0 0px;
     width: 33%;
   }
   .index_works_adv {
@@ -12,6 +12,9 @@
   }
   #about-company .about-list .item {
     width: 23%;
+  }
+  .sotrenichestvo-form-row .form-image img {
+    max-height: 333px;
   }
 }
 /*@media (min-width: 1790px)*/
@@ -163,6 +166,10 @@
     width: 100%!important;
     max-width: 100%!important;
   }
+  #company-adv-mob,
+  #history-slider-row  {
+    display:  none;
+  }
 }
 
 /*@media (min-width: 993px)*/
@@ -243,9 +250,13 @@
   }
   .napolnitely-page .item {
     font-size: 16px;
+    margin: 0 0 45px 0;
   }
   .napolnitely-page h4 {
     font-size: 26px;
+  }
+  .napolnitely-page h4 strong {
+    font-size: 20px!important;
   }
   .napolnitely-page .item > *:first-child:after {
     border-top: 35px solid transparent;
@@ -533,7 +544,7 @@
     margin: 0px 0;
   }
   .index__adv .index__adv_text {
-    padding: 0px 0px;
+    padding: 0px 30px;
     margin: 0 0 40px 0;
     font-size: 17px;
   }
@@ -574,7 +585,7 @@
     top: -10px;
   }
   .index__category {
-    margin: 20px 0 30px 0;
+    margin: 20px 0 10px 0;
   }  
   .index__category .index__category_item {
     justify-content: flex-start;
@@ -589,11 +600,11 @@
     height: 55px;
   }
   .index__category .index__category_item .title {
-    margin: 20px 0 0 0;
+    margin: 0px 0 0 0;
     font-size: 18px;
   }
   .index__materials {
-    margin: 30px 0;
+    margin: 20px 0;
   }
   .index__materials .index__materials_subtitle {
     font-size: 16px;
@@ -601,14 +612,21 @@
   }
   .index__materials .index__materials-container {
     flex-wrap: wrap;
+    margin: 20px 0 0 0;
   }
   .index__materials .item {
-    width: 48%;
+    width: 33%;
     margin: 0 0 40px 0;
   }
   .index__materials .item .img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
+  }
+  .index__materials .item span {
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    display: block;
+    text-align: center;
   }
 
 
@@ -665,15 +683,18 @@
   #main ul.products li.product.type-product.status-publish {
     width: 50%!important;
     padding: 0 0 0 0px!important;
+    margin: 0 0 15px 0;
   }
   #main ul.products li.product.type-product.status-publish:nth-child(even) {
     padding: 0 0 0 10px!important;
   }
   .category__product_attr {
-    font-size: 12px;
+    font-size: 13px;
   }
   .product.type-product .single_add_to_cart_button {
     font-size: 12px;
+    margin:  5px 0 0 0;
+    top: 3px;
   }
   li.product.type-product.status-publish.instock > a > img {
     height: 100px;
@@ -687,9 +708,7 @@
     height: 45px;
     min-width: 45px;
     min-height: 45px;
-  }
-  .card__desc_add .item .title {
-        line-height: 1.2;
+    margin: 0 10px 0 0;
   }
   .entry-summary .single_add_to_cart_button {
     font-size: 18px!important;
@@ -705,7 +724,7 @@
     font-size: 14px;
   }
   #tab-additional_information tr.woocommerce-product-attributes-item {
-    width: 33.3%
+    width: 32.3%
   }
   .woocommerce-product-attributes-item .woocommerce-product-attributes-item__label:before {
     margin: 0 10px 0 0;
@@ -804,7 +823,7 @@
     left: -65px;
     height: 232px;
     width: 130px;
-    top: 25px;
+    top: 105px;
   }
   .storefront-breadcrumb:after {
     top: -5px;
@@ -833,7 +852,7 @@
     padding: 0 0;
   }
   .catalog__container {
-    padding: 0 10px;
+    padding: 10px 10px;
   }
   .footer .footer__column.contacts > div:not(.title) {
     text-align: center;
@@ -842,7 +861,8 @@
     margin: 0 0 30px 2%!important;
   }
   .entry-title {
-  margin: 0 0 30px 20px;
+    margin: 0 0 20px 16px;
+    font-size: 34px;
   }
   /*#sotrenichestvo-page */
   #sotrenichestvo-page > .vc_column-inner > .wpb_wrapper > * > *{
@@ -868,6 +888,9 @@
     display: flex;
     flex-direction: column-reverse;
   }
+  #sotrenichestvo-form .title {
+    font-size: 24px;
+  }
   .napolnitely-page .item {
     font-size: 16px;
   }
@@ -884,10 +907,10 @@
     justify-content: space-between;
   }
   #about-company .about-list .item .title {
-    font-size: 20px!important;
+    font-size: 26px!important;
   }
   #about-company .about-list .item .text {
-    font-size: 14px;
+    font-size: 18px;
   }
   #about-history .list .wpb_wrapper {
     flex-wrap: wrap;
@@ -899,7 +922,7 @@
     padding: 20px;
   }
   #about-history .list .item .text {
-    font-size: 14px;
+    font-size: 15px;
   }
   #about-history .list .item .title {
     font-size: 36px;
@@ -915,10 +938,13 @@
   #about-mission .mission_about .dop {
     top: initial;
     bottom: -20%;
-    right: 25%;
+    right: 30%;
     width: 150px;
     height: 150px;
   } 
+  .entry-content .vc_custom_1648110723184 {
+    margin-top: 40px!important;
+  }
   .about-title span {
     font-size: 28px!important;
   }
@@ -956,19 +982,12 @@
   .single-product .product .summary {
     width: 100%!important;
 	}
-	.card__desc_add .item {
-		flex-direction: column;
-	}
 	.card__desc_add .item .title {
 			margin: 0 0;
-			text-align: center;
 	}
   .single-product .product .product-left .product_title {
     margin: 0 0;
     font-size: 30px;
-  }
-  #tab-additional_information tr.woocommerce-product-attributes-item {
-    width: 33.3%;
   }
   #tab-additional_information .shop_attributes .woocommerce-product-attributes-item__label:before {
     width: 20px;
@@ -978,14 +997,222 @@
     display: none;
   }
   .card__desc > .title {
-    font-size: 18px;
+    font-size: 18px!important;
+  }
+  .summary .woocommerce-product-details__short-description ul {
+    margin: 0 0px 20px 20px;
   }
   .summary .woocommerce-product-details__short-description * {
     font-size: 16px;
+    line-height:  initial;
   }
   .product-left #wpgs-gallery .wcgs-carousel.skrutka:after {
     width: 60px;
     height: 60px;
+  }
+  .woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm .woocommerce-product-attributes-item__label, .woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__label {
+      font-size: 12px!important;
+      text-align: center;
+      height: 40px;
+      padding: 0px 10px!important;
+  }
+  .woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm .woocommerce-product-attributes-item__value p, .woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__value p {
+      line-height: 55px;
+      max-width: 100%;
+      white-space: normal;
+      padding: 0 5%;
+  }
+  .summary .woocommerce-product-details__short-description {
+    margin: 0;
+    padding:  20px 15px;
+    margin-bottom: 20px;
+  }
+  .card__desc_add {
+    padding:  0px 0 0 0;
+  }
+  .card__desc_list li:before {
+    top: 9px;
+  }
+  #sotrenichestvo-form .info {
+    flex-wrap: wrap;
+    margin: 0 0 25px 0;
+  }
+  #sotrenichestvo-form .info > * {
+    width: 100%;
+    font-size: 14px;
+    margin: 15px 0 0 0;
+  }
+  #sotrenichestvo-form label {
+    width:  100%;
+    margin: 0 0 25px 0;
+  }
+  #sotrenichestvo-form .pc-text {
+    margin: 15px 0 0 0;
+    order: 2;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+  }
+  #sotrenichestvo-form input[type="submit"] {
+    width: 100%;
+    margin: 0 0;
+  }
+  #about-adv .item img {
+    max-height: 70px;
+    max-width: 75px!important;
+  }
+  .napolnitely-page h4 {
+    text-align:  center;
+    margin: 14px 0px 5px 0;
+  }
+  .single-product .product-left .woocommerce-tabs {
+    padding: 0px 0 0 0;
+    margin: 20px 0 20px 0;
+  }
+  .single-product div.product .summary .product_subtitle {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+  }
+  #scroll_dealers .city_block .city_name,
+  #filials .item .title {
+    font-size: 22px;
+    margin: 0 0 10px 43px;
+  }
+  #scroll_dealers .city_block *,
+  #filials .item *,
+  #filials .item a {
+    font-size: 16px;
+  }
+  #scroll_dealers .city_block .dealer_name:before, #scroll_dealers .city_block .address:before, #scroll_dealers .city_block .phone:before, #scroll_dealers .city_block .site:before, #scroll_dealers .city_block .email:before {
+    top: 0;
+  }
+  .header.header_fixed {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #fffc;
+    padding: 10px 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #about-company .about-list {
+    display:  none;
+  }
+  #company-adv-mob {
+    margin-top: 30px !important;
+    padding-top: 15px !important;
+    padding-bottom: 30px !important;
+    background-image: url(http://naturavera.org/wp-content/uploads/2022/03/history_bg-1.png?id=814) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  #company-adv-mob .n2-ss-slide-background-image img {
+    width: 150px;
+    margin: 0 auto!important;
+    border-radius: 15px;
+    object-fit: contain;
+  }
+  #company-adv-mob .nextend-bullet-bar .n2-bullet.n2-active {
+    background-color: #084c45;
+  }
+
+  #history-slider-row {
+    margin-top: 15px !important;
+    padding-top: 0px !important;
+    padding-bottom: 30px !important;
+    background-image: url(http://naturavera.org/wp-content/uploads/2022/03/history_bg-1.png?id=814) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  #history-slider-row .n2-ss-slide-background-image img {
+    width: 150px;
+    margin: 0 auto!important;
+    border-radius: 15px;
+    object-fit: contain;
+  }
+  #history-slider-row .nextend-bullet-bar .n2-bullet.n2-active {
+    background-color: #084c45;
+  }
+  #about-history .vc_custom_1648113518152  {
+    display: none;
+  }
+  #contact-page .contacts-about > .title {
+    font-size: 18px;
+    line-height: initial;
+  }
+  #contact-page .contacts-about > .geo {
+    font-size: 16px;
+    line-height: initial;
+    margin: 0px 0 15px 0;
+  }
+  #contact-page .contacts-about > .block {
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 15px 0;
+  }
+  #contact-page .contacts-about > .block .user * {
+    font-size: 14px;
+  }
+  #contact-page .contacts-about > .block .phone:before, 
+  #contact-page .contacts-about > .block .mail:before, 
+  #contact-page .contacts-about > .block .website:before {
+    content:  none;
+  }
+  #contact-page {
+    padding: 20px 5px;
+  }
+  #contact-page .contacts-about > .block .user {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #contact-page .contacts-about > .block .user .name {
+    padding: 0 10px 0 0;
+  }
+    #contact-page .contacts-about > .block .user .mail {
+      width: 100%;
+    }
+  #contact-page .contacts-about > .block .user:not(:last-child) {
+    margin:  0 0 20px 0;
+  }
+  #contact-page .contacts-about > .block * {
+    margin: 0 0 5px 0;
+  }
+  #contact-page .contacts-about > .block * {
+    font-size: 14px;
+  }
+  #contact-page a.website.hidden {
+    display:  none;
+  }
+  #contact-page .contacts-about > .block .title {
+    font-size: 18px;
+    margin:  0 0 10px 0;
+  }
+  #contact-page .contacts-about > .block .name:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 0 4px 0 0;
+  position: relative;
+  top: 3px;
+  background-image: url(../../assets/img/icons/user.png);
+  }
+  #company-adv-mob div#n2-ss-7 [data-hide-mobileportrait="1"],
+  #about-history div#n2-ss-8 [data-hide-mobileportrait="1"] {
+    display:  initial!important;
+  }
+  div#about-history {
+    margin-top: 0!important;
   }
 }
 /*@media (max-width: 993px)*/
@@ -1026,6 +1253,102 @@
   #scroll_dealers .wrap {
     grid-template-columns: 1fr;
   } 
+  #about-company .vc_column_container>.vc_column-inner {
+    padding:  10px 10px!important;
+  }
+  #about-mission .mission_about .dop {
+    font-size: 12px!important;
+    top: initial;
+    bottom: 10px;
+    right: 10%;
+    width: 290px;
+    height: 70px;
+    border-radius: 5px;
+  }
+  .napolnitely-page .title span {
+    font-size: 22px;
+  }
+  #sotrenichestvo-page > .vc_column-inner > .wpb_wrapper > * {
+    padding: 0 0 20px 0;
+  }
+  .products .product.type-product .woocommerce-loop-product__title {
+    font-size: 15px;
+  }
+ .woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__value p {
+    padding: 0 30%;
+  }
+  .woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm .woocommerce-product-attributes-item__value p, .woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__value p {
+    line-height: 25px;
+  }
+  .woocommerce-product-attributes-item--attribute_pa_gabarity-krovati-mm .woocommerce-product-attributes-item__label , 
+  .woocommerce-product-attributes-item--attribute_pa_razmer-spalnogo-mesta-sm .woocommerce-product-attributes-item__label  {
+    text-align:  center;
+    justify-content:  center!important;
+  }
+  .index__adv .index__adv_list {
+    flex-direction:  column;
+    padding: 0 30px;
+  }
+  .index__adv .index__adv_list .index__adv_item {
+    flex-direction:  row;
+    width: 100%;
+    margin: 0 0px 55px 0px!important;
+  }
+  .index__adv .index__adv_list .index__adv_item span {
+    text-align:  left;
+    margin: 0 0 0 20px;
+  }
+  .index__adv .index__adv_list .index__adv_item:before {
+   left: -5px;
+  }
+  .index__adv .index__adv_list .index__adv_item img {
+    margin:  0 0;
+  }
+  #about-mission > *:last-child {
+    display: none;
+  }
+  #about-adv .about-title * {
+    line-height: initial;
+    font-size:  24px!important;
+  }
+    #about-adv .row > .item {
+    width:  33.3%;
+  }
+  #about-adv .row > .item:nth-child(1){order: 5; width: 40%;}
+  #about-adv .row > .item:nth-child(2){order: 2;}
+  #about-adv .row > .item:nth-child(3){order: 4; width: 40%;}
+  #about-adv .row > .item:nth-child(4){order: 1;}
+  #about-adv .row > .item:nth-child(5){order: 3;}
+    #about-adv .item .aio-icon-default {
+    height: 90px;
+    width: 90px;
+  }
+  #about-adv .item:nth-child(2) img {
+    left: 6px;
+  }
+  #about-adv .item img {
+    max-height: 50px;
+    max-width: 50px!important;
+    top: 4px;
+    position: relative;
+  }
+  #about-adv .item .aio-icon-description {
+    font-size: 14px;
+  }
+  #proizvodstvo-page .sp-image-container {
+    height: 330px!important;
+  }
+  #proizvodstvo-page
+  #proizvodstvo-page .slider-pro img.sp-image, #proizvodstvo-page .slider-pro img.sp-thumbnail {
+    object-fit: contain;
+    margin: 0 0!important;
+  }
+  #sotrenichestvo-page > .vc_column-inner > .wpb_wrapper img {
+    margin:  0px 0 10px 0;
+  }
+  #sotrenichestvo-page > .vc_column-inner h4 {
+    margin:  0 0;
+  }
   .scroll-top-container {
     right: 10px;
     transform: scale(0.7);
@@ -1077,7 +1400,7 @@
     margin-top: 15%;
   }
   #main ul.products li.product-category.product img {
-    height: 70px;
+    height: 90px;
     max-width: 80%;
   }
   .woocommerce-loop-category__title {

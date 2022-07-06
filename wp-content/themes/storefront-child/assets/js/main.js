@@ -59,6 +59,7 @@ if ($(window).width() < 1500) {
 // fix header
 $(function() {
     let header = $('.header');
+    
     $(window).scroll(function() {
         if($(this).scrollTop() > 350) {
         header.addClass('header_fixed');
