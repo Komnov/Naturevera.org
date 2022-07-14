@@ -2294,24 +2294,38 @@ article.type-page.hentry {
   top: 29%;
 
 }
-.mobile__catalog_book .section.popup .comfy_btn img {
+.mobile__catalog_book .section.popup .comfy_btn svg {
   width: 45px;
   max-width: 45px;
   position: relative;
-  animation: popup-bads  1s infinite linear;
+  animation: popup-bads  2s infinite linear;
   border-radius: 100%;
+}
+.mobile__catalog_book .section.popup .comfy_btn svg > path {
+  animation: popup-bads-color  2s infinite ease-out ;
 }
 @keyframes popup-bads {
   0% {
     top:  0;
   }
   50% {
-    top: 3px;
+    transform: scale(0.9);
     box-shadow: 0 0 4px 1px #04554e;
     border-radius: 100%;
   }
   100% {
     top:  0;
+  }
+}
+
+@keyframes popup-bads-color {
+  0% {
+  }
+  50% {
+    fill: #c91;
+  }
+  100% {
+    
   }
 }
 /*Мобильный каталог*/
