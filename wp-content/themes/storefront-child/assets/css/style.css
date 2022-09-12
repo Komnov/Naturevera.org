@@ -2201,3 +2201,7 @@ article.type-page.hentry {
     cursor: default;
 }
 /*contact page*/
+
+body {
+  background-color: grey!important;
+}
