@@ -1214,6 +1214,10 @@
   div#about-history {
     margin-top: 0!important;
   }
+  .summary .woocommerce-product-details__short-description .beds__desc .image,
+  .summary .woocommerce-product-details__short-description .beds__desc .image.sofas__cloth_image {
+    max-width: 100%;
+  }
 }
 /*@media (max-width: 993px)*/
 

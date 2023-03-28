@@ -902,6 +902,9 @@ li.product.type-product:hover {
   line-height: initial;
   margin: 0 0 4px 0;
 }
+.category__product_attr span {
+    text-align: left;
+}
 .category__product_attr > span:last-child {
   text-align: right;
   line-height: initial;
@@ -1487,6 +1490,9 @@ ol.flex-control-nav.flex-control-thumbs li {
 .summary .woocommerce-product-details__short-description .beds__desc .image {
   margin: 30px 0 0 0;
   width: 330px;
+}
+.summary .woocommerce-product-details__short-description .beds__desc .image.sofas__cloth_image {
+    width: 480px;
 }
 tr.woocommerce-product-attributes-item.woocommerce-product-attributes-item--attribute_pa_mozhno-skrutit-v-rulon {
     display: none;
