@@ -52,7 +52,7 @@ get_header(); ?>
                     </div>
                     <div class="index__adv_item">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_adv2.svg" alt="">
-                        <span class="title"><b>1000 матрасов</b><br>выпускается ежедневно</span>
+                        <span class="title"><b>36000 матрасов</b><br>выпускается ежемесячно</span>
                     </div>
                     <div class="index__adv_item">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/index_adv4.svg" alt="">
@@ -206,37 +206,37 @@ get_header(); ?>
                         <div class="index__materials_subtitle">Мы используем современные и экологичные  материалы, соблюдая лучшие <br>традиции качества при производстве нашей продукции</div>
                     </div>
                     <div class="col-xl-12 col-12 index__materials-container">
-                        <a href="" class="item">
+                        <a href="/napolniteli/" class="item">
                             <div class="img">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat1.png" alt="">
                             </div>
                             <span>Кокос</span>
                         </a>
-                        <a href="" class="item">
+                        <a href="/napolniteli/" class="item">
                             <div class="img">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat2.png" alt="">
                             </div>
                             <span>Сизаль</span>
                         </a>
-                        <a href="" class="item">
+                        <a href="/napolniteli/" class="item">
                             <div class="img">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat3.png" alt="">
                             </div>
                             <span>Memory foam</span>
                         </a>
-                        <a href="" class="item">
+                        <a href="/napolniteli/" class="item">
                             <div class="img">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat4.png" alt="">
                             </div>
                             <span>Латекс</span>
                         </a>
-                        <a href="" class="item">
+                        <a href="/napolniteli/" class="item">
                             <div class="img">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/other/index_mat5.png" alt="">
                             </div>
-                            <span>7-зональный <br>латекс Алое</span>
+                            <span>7-зональный <br>латекс Лаванда</span>
                         </a>
-                        <a href="" class="item">
+                        <a href="/napolniteli/" class="item">
                             <div class="img about">
                                 <span>Все материалы и все о них</span>
                             </div>

@@ -35,17 +35,15 @@
                         <a href="/product-category/matrasy/">Матрасы</a>
                         <a href="/product-category/krovati/">Кровати</a>
                         <a href="/product-category/aksessuary/">Аксессуары</a>
-                        <a href="/product-category/aksessuary/podushka/">Подушки</a>
-                        <a href="/product-category/aksessuary/namatrasniki/">Топперы и наматрасники</a>
                     </div>
                 </div>
-                <div class="col-xl-1 col-lg-1"></div>
-                <div class="col-xl-5 col-lg-5 col-md-12 col-12 footer__column contacts">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12 footer__column contacts">
                     <div class="title">Контакты</div>
                     <div>141603, Московская область, г. Клин,</div>
                     <div>Ленинградское шоссе, 88 км., стр. 3, офис 102</div>
                     <div>Телефон: <a href="tel:84951059294">+7-495-105-92-94</a></div>
                     <div>E-mail: <a href="mail:INFO@2-MK.COM">INFO@2-MK.COM</a></div>
+                    <div id="vk_groups" style="margin: 0px auto; width: 200px; height: 178px; background: none;"><iframe name="fXD8ce5d" frameborder="0" src="https://vk.com/widget_community.php?app=0&amp;width=200px&amp;_ver=1&amp;gid=203125452&amp;mode=1&amp;color1=FFFFFF&amp;color2=000000&amp;color3=5181B8&amp;class_name=&amp;height=400&amp;url=https%3A%2F%2Fnaturavera.su%2F&amp;referrer=https%3A%2F%2Fnaturavera.su%2Fwp-admin%2Fplugin-install.php%3Fs%3DYoast%2520SEO%26tab%3Dsearch%26type%3Dterm&amp;title=%D0%9C%D0%B0%D1%82%D1%80%D0%B0%D1%81%D1%8B%2C%20%D0%BA%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D0%B8%20Natura%20Vera.%20%D0%9A%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%BE%D1%82%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F&amp;18b6721dd3a" width="200" height="141" scrolling="no" id="vkwidget1" style="overflow: hidden; height: 178px;"></iframe>&nbsp;</div>
                 </div>
             </div>
         </div>

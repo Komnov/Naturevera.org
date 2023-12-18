@@ -170,6 +170,12 @@
   #history-slider-row  {
     display:  none;
   }
+
+  div#vk_groups {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 /*@media (min-width: 993px)*/
@@ -279,6 +285,9 @@
     top: 25%;
     right: -11%;
   }
+  .tkani__preview .img {
+    max-width: 50%;
+  }
 }
 /*(max-width: 1481px)*/
 
@@ -360,6 +369,9 @@
   }
   .index__materials .index__materials_list {
     margin: 40px 0 70px 0;
+  }
+  .tkani__preview .link__all .title {
+    font-size: 14px;
   }
 }
 
@@ -1217,6 +1229,26 @@
   .summary .woocommerce-product-details__short-description .beds__desc .image,
   .summary .woocommerce-product-details__short-description .beds__desc .image.sofas__cloth_image {
     max-width: 100%;
+  }
+  .tkani__preview {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tkani__preview .img {
+    max-width: 65%;
+  }
+  .tkani__preview .link__all {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  .tkani__preview .link__all .title {
+    padding: 12px 0px;
+    width: 80%;
+    text-align: center;
+    display: block;
+  }
+  .tkani__preview .link__all .img {
+    height: 20px;
   }
 }
 /*@media (max-width: 993px)*/

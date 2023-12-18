@@ -105,3 +105,19 @@ add_action('woocommerce_before_single_product_summary', 'woocommerce_template_si
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+
+//выводим больше иэлементов в админке (атрибуты)
+function increase_posts_per_page($query) {
+    if (is_admin() && $query->is_main_query()) {
+        $query->set('posts_per_page', -1); // -1 означает, что будут отображены все элементы, установите другое число, если нужно отобразить определенное количество элементов.
+    }
+}
+add_action('pre_get_posts', 'increase_posts_per_page');
+
+function custom_admin_posts_per_page($query) {
+    if (is_admin() && $query->is_main_query() && (get_post_type() == 'post' || get_post_type() == 'page')) {
+        $query->set('posts_per_page', 50); // Замените 20 на желаемое количество записей
+    }
+}
+add_action('pre_get_posts', 'custom_admin_posts_per_page');

@@ -59,12 +59,15 @@ if ($(window).width() < 1500) {
 // fix header
 $(function() {
     let header = $('.header');
+    let bodyfix = $('body')
     
     $(window).scroll(function() {
         if($(this).scrollTop() > 350) {
         header.addClass('header_fixed');
+        bodyfix.addClass('body_fixed');
         } else {
         header.removeClass('header_fixed');
+        bodyfix.removeClass('body_fixed');
         }
     });
 });
